@@ -1,3 +1,1 @@
-Sistema que faz o gerenciamento para o setor de TI, que é responsável por atender solicitações internas de suporte técnico, utilizando a (IA) Inteligência Artificial para auxiliar nesse processo, o funcionário da empresa cria uma conta no sistema, em seguida, pode criar chamados, ver informações pessoais e verificar status dos chamados criados.
-Ao criar um chamado a IA recebe a solicitação, e já retorna ao funcionário uma solução prévia, mas também encaminha a solicitação para o Técnico responsável por resolver o problema específico.
-Assim agilizando o processo, e facilitando o atendimento ao funcionário.
+Software utilizado para gerenciar chamados de assistência técnica integrado a IA, os funcionários da empresa criam chamados através do Software, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.

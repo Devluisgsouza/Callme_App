@@ -1,4 +1,5 @@
 import {  StyleSheet } from "react-native";
+import { ButtonMenu } from ".";
 
 
 
@@ -55,4 +56,22 @@ export const style = StyleSheet.create({
         color: 'blue',
         textDecorationLine: 'underline',
     },
+
+    ButtonMenu: {
+        width: 185,
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'black',
+        borderRadius: 15,
+        marginLeft:8,
+        marginTop: 10,
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.29,
+        shadowRadius: 4.65,
+    }
 })

@@ -7,9 +7,8 @@ export const style = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        
     },
-    
+
     boxTop: {
         height: Dimensions.get('window').height/3,
         width: '100%',
@@ -24,15 +23,12 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "white",
 
-
     },
 
     boxFinal: {
         height: Dimensions.get('window').height/3,
         width: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: "green"
+        backgroundColor: "white"
     },
 
     logo: {
@@ -53,11 +49,11 @@ export const style = StyleSheet.create({
     message: {
         fontWeight: 'bold',
         fontSize: 20,
-        color: "white",
+        color: "black",
         justifyContent: "center",
         textAlign: "center",
         marginLeft: 5,
-        marginTop: 10,
+        marginTop: 15,
     },
 
     Button: {
@@ -70,7 +66,7 @@ export const style = StyleSheet.create({
     },
 
     blackSquare: {
-        width: 350,
+        width: 370,
         height: 70,
         backgroundColor: 'black',
         alignItems: 'center',
@@ -80,11 +76,13 @@ export const style = StyleSheet.create({
       },
 
       blackSquareBig: {
-        width: 350,
-        height: 160,
-        backgroundColor: 'black',
+        width: 370,
+        height: 135,
+        backgroundColor: 'white',
         alignItems: 'center',
-        marginTop: 10,
+        marginTop: 30,
         borderRadius: 30,
+        borderWidth: 5,
+        borderColor: 'black',
       },
 })

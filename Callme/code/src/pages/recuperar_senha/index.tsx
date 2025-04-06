@@ -9,7 +9,7 @@ export default function Recuperar_senha(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text>Ola Menu</Text>
+                <Text>Ola Senha</Text>
 
             </View>
 

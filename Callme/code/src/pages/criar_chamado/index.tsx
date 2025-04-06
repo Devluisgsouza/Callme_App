@@ -5,11 +5,11 @@ import { style } from './styles';
 
 
 
-export default function Menu(){
+export default function Criar_chamado(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text>Ola Menu</Text>
+                <Text>Ola Criar Chamados</Text>
 
             </View>
 

@@ -9,7 +9,7 @@ export default function Criar_Login(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text>Ola Menu</Text>
+                <Text>Ola Criar login</Text>
 
             </View>
 

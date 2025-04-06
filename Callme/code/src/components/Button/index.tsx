@@ -4,7 +4,7 @@ import { style } from "./styles";
 
 type Props = TouchableHighlightProps & {
     text:string,
-    Loading?:boolean
+    Loading?:boolean,
 }
 
 
@@ -41,6 +41,18 @@ export function ButtonTextsenha({...rest}:Props) {
             activeOpacity={0.6}
         >
             {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton2}>{rest.text}</Text> }
+        </TouchableOpacity>
+    )
+}
+
+export function ButtonMenu({...rest}:Props) {
+    return(
+        <TouchableOpacity 
+            style={style.ButtonMenu}
+            {...rest}
+            activeOpacity={0.6}
+        >
+            {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton}>{rest.text}</Text> }
         </TouchableOpacity>
     )
 }

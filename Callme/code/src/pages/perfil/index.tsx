@@ -5,11 +5,11 @@ import { style } from './styles';
 
 
 
-export default function Menu(){
+export default function Perfil(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text>Ola Menu</Text>
+                <Text>Ola Perfil</Text>
 
             </View>
 

@@ -45,11 +45,11 @@ export default function Login (){
     }
 
     async function getcriar(){
-        navigation.navigate("Criar_login")
+        navigation.navigate("criar_login")
     }
 
     async function getsenha() {
-        navigation.navigate('Recuperar_senha')
+        navigation.navigate('recuperar_senha')
     }
 
 
@@ -87,8 +87,8 @@ export default function Login (){
             <View style={style.boxButtom}>
                 <Button text="ENTRAR" Loading={loading} onPress={() => getLogin()} />
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={style.TextFinal}>Não tem conta?</Text>
-                <ButtonText text=" Crie agora!" onPress={() => getcriar()} />
+                    <Text style={style.TextFinal}>Não tem conta?</Text>
+                    <ButtonText text=" Crie agora!" onPress={() => getcriar()} />
                 </View>
             </View>
       

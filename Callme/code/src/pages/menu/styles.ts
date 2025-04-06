@@ -34,12 +34,11 @@ export const style = StyleSheet.create({
     logo: {
         width: 400,
         height: 250,
-        marginTop: 30
+        marginTop: 50
     },
 
     title: {
         fontWeight: 'bold',
-        marginTop: 0,
         fontSize: 40,
         color: 'white',
         justifyContent: "center",
@@ -66,12 +65,12 @@ export const style = StyleSheet.create({
     },
 
     blackSquare: {
-        width: 370,
+        width: 240,
         height: 70,
         backgroundColor: 'black',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 10,
+        marginTop: 20,
         borderRadius: 30,
       },
 
@@ -80,7 +79,7 @@ export const style = StyleSheet.create({
         height: 135,
         backgroundColor: 'white',
         alignItems: 'center',
-        marginTop: 30,
+        marginTop: 20,
         borderRadius: 30,
         borderWidth: 5,
         borderColor: 'black',

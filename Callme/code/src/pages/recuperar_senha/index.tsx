@@ -5,7 +5,7 @@ import { style } from './styles';
 
 
 
-export default function Criar_Login(){
+export default function Recuperar_senha(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
@@ -28,4 +28,3 @@ export default function Criar_Login(){
         
     )
 }
-

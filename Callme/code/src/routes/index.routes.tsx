@@ -4,6 +4,7 @@ import Login from "../pages/login";
 import Menu from "../pages/menu";
 import Criar_Login from "../pages/criar_login";
 import BottomRoutes from "./botton.routes";
+import Recuperar_senha from "../pages/recuperar_senha";
 
 
 
@@ -36,6 +37,10 @@ export default function Routes(){
             <Stack.Screen
                 name="Criar_login"
                 component={Criar_Login}
+            />
+            <Stack.Screen
+                name="Recuperar_senha"
+                component={Recuperar_senha}
             />
 
         </Stack.Navigator>

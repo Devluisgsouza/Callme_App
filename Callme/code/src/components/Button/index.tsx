@@ -33,4 +33,17 @@ export function ButtonText({...rest}:Props) {
     )
 }
 
+export function ButtonTextsenha({...rest}:Props) {
+    return(
+        <TouchableOpacity 
+            style={style.Buttontextsenha}
+            {...rest}
+            activeOpacity={0.6}
+        >
+            {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton2}>{rest.text}</Text> }
+        </TouchableOpacity>
+    )
+}
+
+
 

@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from "react-native";
+import {  StyleSheet } from "react-native";
 
 
 
@@ -10,6 +10,7 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'black',
         borderRadius: 40,
+        marginTop: 20,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
@@ -32,18 +33,26 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'white',
         borderRadius: 40,
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 3,
-        },
-        shadowOpacity: 0.29,
-        shadowRadius: 4.65,
+        marginTop: 160,
+        
+    },
+
+    Buttontextsenha: {
+        width: 150,
+        height: 22,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 10,
+        marginHorizontal: 40,
+        textDecorationLine: 'underline',
+        
+        
     },
 
     TextButton2: {
         fontSize: 15,
         fontWeight: 'bold',
-        color: 'blue'
+        color: 'blue',
+        textDecorationLine: 'underline',
     },
 })

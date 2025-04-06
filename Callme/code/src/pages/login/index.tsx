@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import { Text,View,Image,Alert } from "react-native";
 import { style } from "./styles";
-import Logo from '../../assets/login.png';
+import Logo from '../../assets/logo.png';
 import {MaterialIcons, Octicons} from '@expo/vector-icons';
 import { Input } from "../../components/input";
-import { Button, ButtonText } from "../../components/Button";
+import { Button, ButtonText, ButtonTextsenha } from "../../components/Button";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 
 
@@ -13,7 +13,6 @@ import { useNavigation, NavigationProp } from '@react-navigation/native';
 export default function Login (){
 
     const navigation = useNavigation<NavigationProp<any>>();
-
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
     const [showPassword,setShowPassword] = useState(true);
@@ -29,7 +28,7 @@ export default function Login (){
 
 
             setTimeout(() => {
-                if(email == 'funcionario@teste.com' && password == 'senha'){
+                if(email == 'teste' && password == 'senha'){
                     Alert.alert('Login realizado com sucesso!')
                     navigation.navigate("BottomRoutes")
                 }else{
@@ -49,6 +48,10 @@ export default function Login (){
         navigation.navigate("Criar_login")
     }
 
+    async function getsenha() {
+        navigation.navigate('Recuperar_senha')
+    }
+
 
     return (
         <View style={style.container}>
@@ -58,7 +61,7 @@ export default function Login (){
                     style={style.logo}
                     resizeMode="contain"     
                 />
-                <Text style={style.text}>Bem vindo de volta!</Text>                    
+                <Text style={style.text}>Faça seu Login</Text>                    
             </View>
             <View style={style.boxMid}>
                 <Input
@@ -77,15 +80,18 @@ export default function Login (){
                     secureTextEntry={showPassword}
                     onIconRightPress={() => setShowPassword(!showPassword)}
                 />
+                <View style={style.boxMid}>
+                    <ButtonTextsenha text="Esqueci minha senha" onPress={()=> getsenha()} />
+                </View>
             </View>
             <View style={style.boxButtom}>
-                <Button text="ENTRAR" Loading={loading} onPress={()=>getLogin()}/>
+                <Button text="ENTRAR" Loading={loading} onPress={() => getLogin()} />
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Text style={style.TextFinal}>Não tem conta?</Text>
-                <ButtonText text="Crie agora!" onPress={()=>getcriar()}/>
+                <ButtonText text=" Crie agora!" onPress={() => getcriar()} />
+                </View>
             </View>
-                
-            
+      
         </View>
     )
-    
 }

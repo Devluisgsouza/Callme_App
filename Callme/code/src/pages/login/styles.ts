@@ -29,13 +29,14 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 200,
-        height: 200
+        width: 170,
+        height: 170,
+        marginTop: 20
     },
 
     text: {
         fontWeight: 'bold',
-        marginTop: -25,
+        marginTop: 10,
         fontSize: 30,
         color: 'black'
     },

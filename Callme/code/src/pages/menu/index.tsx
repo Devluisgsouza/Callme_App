@@ -1,20 +1,31 @@
 import React from "react";
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import { style } from './styles';
+import Logo from '../../assets/logo.png';
 
 
 
 
 export default function Menu(){
+    
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text>Ola Menu</Text>
-
+                <Image 
+                    source={Logo}
+                    style={style.logo}
+                    resizeMode="contain"     
+                />
             </View>
 
             <View style={style.boxMid}>
-                <Text>Ola Menu</Text>
+                <View style={style.blackSquare}>
+                    <Text style={style.title}>Bem vindo!</Text>
+                </View>
+
+                <View style={style.blackSquareBig}>
+                    <Text style={style.message}>Para criar e visualizar seus chamados, acesse as abas correspondentes</Text>
+                </View>
 
             </View>
 
@@ -24,8 +35,6 @@ export default function Menu(){
             </View>
       </View>
 
-      
-        
     )
 }
 

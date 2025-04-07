@@ -28,9 +28,9 @@ export default function Login (){
 
 
             setTimeout(() => {
-                if(email == 'teste' && password == 'senha'){
+                if(email == 'a' && password == 'a'){
                     Alert.alert('Login realizado com sucesso!')
-                    navigation.navigate("BottomRoutes")
+                    navigation.reset({routes:[{name:"BottomRoutes"}]})
                 }else{
                     Alert.alert('ATENÇÃO','Usuário ou senha inválidos!')
                 }

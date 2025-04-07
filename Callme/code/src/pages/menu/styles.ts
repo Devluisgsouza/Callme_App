@@ -1,7 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 
 
-
 export const style = StyleSheet.create({
     container: {
         flex: 1,
@@ -72,6 +71,13 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         marginTop: 20,
         borderRadius: 30,
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowRadius:40.00,
+        elevation:9,
+        shadowColor: 'black'        
       },
 
       blackSquareBig: {
@@ -81,7 +87,14 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         marginTop: 20,
         borderRadius: 30,
-        borderWidth: 5,
+        borderWidth: 3,
         borderColor: 'black',
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowRadius:40.00,
+        elevation:9,
+        shadowColor: 'black'
       },
 })

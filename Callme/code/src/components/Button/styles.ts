@@ -66,12 +66,12 @@ export const style = StyleSheet.create({
         borderRadius: 15,
         marginLeft:8,
         marginTop: 10,
-        shadowColor: '#000',
         shadowOffset: {
             width: 0,
-            height: 3,
+            height: 12,
         },
-        shadowOpacity: 0.29,
-        shadowRadius: 4.65,
+        shadowRadius:40.00,
+        elevation:9,
+        shadowColor: 'black',
     }
 })

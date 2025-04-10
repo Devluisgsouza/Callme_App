@@ -5,11 +5,12 @@
 
 ## 📕 Sobre
 
-**Callme App** é um oftware utilizado para gerenciar chamados para assistência técnica integrado a IA, os funcionários da empresa criam chamados através do Software, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.
+**Callme App** é um software utilizado para gerenciar chamados realizados por funcionários para a assistência técnica integrado a IA, os funcionários criam chamados através do Software, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.
 
 Utilizando o método ágil Scrum construimos o software com React Native e linguagem TypeScript.
 
 Essa idéia veio devido ao aumento de insatisfação com os softwares já existentes, em que não fornecem a IA integrada.
+
 
 ## 🛠 Ferramentas
 
@@ -20,4 +21,12 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 - [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwtdi_BhACEiwA97y8BK-tY4oR5cK3W_CzLqqa771C1-3OcUvI-uAFNPAHbnRxR6vZxkYKlxoC7z0QAvD_BwE&hl=pt-br)
 
 
+
+## 🗒️ Modelagem de Requisitos
+
+- [Diagramas](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Diagrama_de_caso_de_uso_sistema.asta)
+
+<h1 align='center'>
+<img src='./Callme/code/src/assets/Caso_de_uso.png'>
+</h1>
 

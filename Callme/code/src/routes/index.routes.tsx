@@ -7,7 +7,7 @@ import BottomRoutes from "./botton.routes";
 import Criar_chamado from "../pages/criar_chamado";
 import Perfil from "../pages/perfil";
 import Visualizar_chamados from "../pages/chamados";
-import Recuperar_senha from "../pages/recuperar_senha";
+
 
 
 
@@ -49,11 +49,6 @@ export default function Routes(){
                 name="chamados"
                 component={Visualizar_chamados}
             />            
-            <Stack.Screen
-                name="recuperar_senha"
-                component={Recuperar_senha}
-            />    
-
         </Stack.Navigator>
     )
 }

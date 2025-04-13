@@ -17,39 +17,58 @@ export default function Login (){
     const [password,setPassword] = useState('');
     const [showPassword,setShowPassword] = useState(true);
     const [loading,setLoading] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [passwordError, setPasswordError] = useState(false);
+    
 
-    async function getLogin(){
-        try{
-            setLoading(true)
-
-            if(email === '' || password === ''){
-                return Alert.alert('ATENÇÃO','Preencha os campos obrigatórios!')
+    async function getLogin() {
+        try {
+            let hasError = false;
+    
+            if (email === '') {
+                setEmailError(true);
+                hasError = true;
+            } else {
+                setEmailError(false);
             }
-
-
+    
+            if (password === '') {
+                setPasswordError(true);
+                hasError = true;
+            } else {
+                setPasswordError(false);
+            }
+    
+            if (hasError) {
+                return Alert.alert('ATENÇÃO', 'Preencha os campos obrigatórios marcados com ( * )!');
+            }
+    
+            setLoading(true);
+    
             setTimeout(() => {
-                if(email == 'a' && password == 'a'){
-                    Alert.alert('Login realizado com sucesso!')
-                    navigation.reset({routes:[{name:"BottomRoutes"}]})
-                }else{
-                    Alert.alert('ATENÇÃO','Usuário ou senha inválidos!')
+                setLoading(false);
+                if (email == 'a' && password == 'a') {
+                    Alert.alert('Login realizado com sucesso!');
+                    navigation.reset({ routes: [{ name: "BottomRoutes" }] });
+                } else {
+                    Alert.alert('ATENÇÃO', 'Usuário ou senha inválidos!');
                 }
-            })
-
+            }, 1000);
             
         } catch (error) {
-            console.log(error)
-        }finally{
-            setLoading(false)
-        }    
+            console.log(error);
+            setLoading(false);
+        }
     }
+    
+
 
     async function getcriar(){
         navigation.navigate("criar_login")
     }
 
     async function getsenha() {
-        navigation.navigate('recuperar_senha')
+        return Alert.alert('ATENÇÃO','Impossível recuperar senha! entre em contato com o suporte técnico para alterá-la.')
     }
 
 
@@ -65,18 +84,34 @@ export default function Login (){
             </View>
             <View style={style.boxMid}>
                 <Input
-                    value = {email}
-                    onChangeText={setEmail}
-                    title = "ENDEREÇO DE EMAIL"
+                    value={email}
+                    onChangeText={(text) => {
+                        setEmail(text);
+                        if (text) setEmailError(false);
+                    }}
+                    title={
+                        <Text>
+                            ENDEREÇO DE EMAIL
+                            {emailError && <Text style={{ color: 'red' }}> *</Text>}
+                        </Text>
+                    }
                     IconRight={MaterialIcons}
                     iconRightName="email"
                 />
-                <Input 
+                <Input
                     value={password}
-                    onChangeText={setPassword}
-                    title = "SENHA"
+                    onChangeText={(text) => {
+                        setPassword(text);
+                        if (text) setPasswordError(false);
+                    }}
+                    title={
+                        <Text>
+                            SENHA
+                            {passwordError && <Text style={{ color: 'red' }}> *</Text>}
+                        </Text>
+                    }
                     IconRight={Octicons}
-                    iconRightName={showPassword?"eye-closed":"eye"}
+                    iconRightName={showPassword ? "eye-closed" : "eye"}
                     secureTextEntry={showPassword}
                     onIconRightPress={() => setShowPassword(!showPassword)}
                 />
@@ -91,7 +126,6 @@ export default function Login (){
                     <ButtonText text=" Crie agora!" onPress={() => getcriar()} />
                 </View>
             </View>
-      
         </View>
     )
 }

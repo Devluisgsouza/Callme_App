@@ -1,4 +1,4 @@
-import React, { forwardRef,Fragment, LegacyRef } from "react";
+import React, { forwardRef,Fragment, LegacyRef, ReactElement } from "react";
 import {View, Text, TextInput, TextInputProps, TouchableOpacity} from "react-native";
 import {style} from "./styles";
 import {FontAwesome, MaterialIcons, Octicons} from '@expo/vector-icons';
@@ -14,7 +14,7 @@ type Props = TextInputProps & {
     IconRight?: IconComponent,
     iconLeftName?: string,
     iconRightName?: string,
-    title?: string,
+    title?: ReactElement,
     onIconLeftPress?: () => void,
     onIconRightPress?: () => void,
 }

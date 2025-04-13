@@ -13,19 +13,21 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/3,
         width: '100%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
 
     boxMid: {
         height: Dimensions.get('window').height/3,
         width: '100%',
         paddingHorizontal: 40,
+
     },
 
     boxButtom: {
         height: Dimensions.get('window').height/3,
         width: '100%',
         alignItems: 'center',
+
     },
 
     logo: {
@@ -76,5 +78,12 @@ export const style = StyleSheet.create({
         alignItems: "center",
         fontSize: 10,
         backgroundColor: "white"
-    }
+    },
+
+    textError: {
+        fontWeight: 'bold',
+        marginTop: 30,
+        fontSize: 50,
+        color: 'black'
+    },
 })

@@ -73,5 +73,6 @@ export const style = StyleSheet.create({
         shadowRadius:40.00,
         elevation:9,
         shadowColor: 'black',
-    }
+    },
+
 })

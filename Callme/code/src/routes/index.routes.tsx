@@ -7,6 +7,9 @@ import BottomRoutes from "./botton.routes";
 import Criar_chamado from "../pages/criar_chamado";
 import Perfil from "../pages/perfil";
 import Visualizar_chamados from "../pages/chamados";
+import BottomTecnicoRoutes from "./botton.tecnico.routes";
+import Visualizar_chamados_tecnico from "../pages/cahamados_tecnico";
+import Atender_chamados from "../pages/atender_chamado";
 
 
 
@@ -34,6 +37,10 @@ export default function Routes(){
                 component={BottomRoutes}
             />
             <Stack.Screen
+                name="BottomTecnicoRoutes"
+                component={BottomTecnicoRoutes}
+            />
+            <Stack.Screen
                 name="criar_login"
                 component={Criar_Login}
             />
@@ -48,7 +55,15 @@ export default function Routes(){
             <Stack.Screen
                 name="chamados"
                 component={Visualizar_chamados}
-            />            
+            />
+            <Stack.Screen
+                name="chamados_tecnico"
+                component={Visualizar_chamados_tecnico}
+            />
+            <Stack.Screen
+                name="atender_chamado"
+                component={Atender_chamados}
+            />                
         </Stack.Navigator>
     )
 }

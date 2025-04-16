@@ -44,7 +44,7 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 10,
-        marginHorizontal: 40,
+        marginHorizontal: '25%',
         textDecorationLine: 'underline',
         
         

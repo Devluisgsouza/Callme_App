@@ -6,6 +6,7 @@ import {MaterialIcons, Octicons} from '@expo/vector-icons';
 import { Input } from "../../components/input";
 import { Button, ButtonText, ButtonTextsenha } from "../../components/Button";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
+import { CheckBox } from "../../components/CheckBox";
 
 
 
@@ -19,6 +20,16 @@ export default function Login (){
     const [loading,setLoading] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
+    const [userType, setUserType] = useState<'tecnico' | 'funcionario' | null>(null);
+    const [isFuncionario, setIsFuncionario] = useState(false);
+    const [isTecnico, setIsTecnico] = useState(false);
+    const handleUserTypeChange = (type: 'tecnico' | 'funcionario') => {
+        setUserType(type);
+        setIsFuncionario(type === 'funcionario');
+        setIsTecnico(type === 'tecnico');
+    };
+
+
 
 
     async function getLogin() {
@@ -49,7 +60,10 @@ export default function Login (){
                 setLoading(false);
                 if (email == 'a' && password == 'a') {
                     Alert.alert('Login realizado com sucesso!');
-                    navigation.reset({ routes: [{ name: "BottomRoutes" }] });
+                    if (isFuncionario){
+                        navigation.reset({ routes: [{ name: "BottomRoutes" }] });}
+                    else if (isTecnico){
+                        navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
                 } else {
                     Alert.alert('ATENÇÃO', 'Usuário ou senha inválidos!');
                 }
@@ -80,9 +94,11 @@ export default function Login (){
                     style={style.logo}
                     resizeMode="contain"     
                 />
-                <Text style={style.text}>Faça seu Login</Text>                    
+                <Text style={style.text}>Faça seu Login</Text>
+                
             </View>
             <View style={style.boxMid}>
+                <CheckBox value={userType} onChange={handleUserTypeChange} />
                 <Input
                     value={email}
                     onChangeText={(text) => {
@@ -115,9 +131,7 @@ export default function Login (){
                     secureTextEntry={showPassword}
                     onIconRightPress={() => setShowPassword(!showPassword)}
                 />
-                <View style={style.boxMid}>
-                    <ButtonTextsenha text="Esqueci minha senha" onPress={()=> getsenha()} />
-                </View>
+                <ButtonTextsenha text="Esqueci minha senha" onPress={()=> getsenha()} />
             </View>
             <View style={style.boxButtom}>
                 <Button text="ENTRAR" Loading={loading} onPress={() => getLogin()} />

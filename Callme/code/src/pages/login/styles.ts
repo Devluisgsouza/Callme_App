@@ -20,6 +20,7 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/3,
         width: '100%',
         paddingHorizontal: 40,
+        backgroundColor: 'red'
 
     },
 

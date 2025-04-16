@@ -29,6 +29,6 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 - [Diagramas](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Diagrama_de_caso_de_uso_sistema.asta)
 
 <h1 align='center'>
-<img src='./Callme/code/src/assets/Caso_de_uso.png'>
+<img src='./Callme/code/src/assets/Diagrama_Caso_de_uso.png'>
 </h1>
 

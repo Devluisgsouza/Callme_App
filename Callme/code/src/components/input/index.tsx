@@ -32,7 +32,7 @@ const calculateSizeWeidth = () => {
         return '90%'
     }else{
         return '100%'
-    }
+    }   
 }
 
 const CalculateSizePaddingLef = () => {

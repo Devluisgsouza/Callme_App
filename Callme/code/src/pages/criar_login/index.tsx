@@ -100,7 +100,9 @@ export default function Criar_Login(){
                 <Input
                 value={nome}
                 onChangeText={(text) => {
-                    setNome(text);}}
+                    setNome(text);
+                    if (text) setNomeError(false);
+                }}
                 title={
                     <Text style={style.TextCaixa}>
                         NOME COMPLETO
@@ -111,7 +113,9 @@ export default function Criar_Login(){
                 <Input
                 value={re}
                 onChangeText={(text) => {
-                    setRe(text);}}
+                    setRe(text);
+                    if (text) setReError(false);
+                }}
                 title={
                     <Text style={style.TextCaixa}>
                         R.E. (REGISTRO EMPRESARIAL)
@@ -122,7 +126,9 @@ export default function Criar_Login(){
                 <Input
                 value={email}
                 onChangeText={(text) => {
-                    setEmail(text);}}
+                    setEmail(text);
+                    if (text) setEmailError(false);
+                }}  
                 title={
                     <Text style={style.TextCaixa}>
                         EMAIL

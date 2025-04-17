@@ -5,32 +5,40 @@ import { Dimensions, StyleSheet } from "react-native";
 export const style = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: 'black'
         
     },
     
     boxTop: {
-        height: Dimensions.get('window').height/3,
+        height: Dimensions.get('window').height/9,
         width: '100%',
         alignItems: 'center',
+        backgroundColor: "black",
         justifyContent: 'center',
-        backgroundColor: "red"
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/3,
+        height: Dimensions.get('window').height/1,
         width: '100%',
         alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: "blue"
+        backgroundColor: "white",
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
     },
 
-    boxFinal: {
-        height: Dimensions.get('window').height/3,
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: "green"
+    Textinicial: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: 'white',
+        marginTop: 10
+
+
+    },
+
+    logo: {
+        width: 70,
+        height: 170,
+        marginTop: -30
+
     },
 })

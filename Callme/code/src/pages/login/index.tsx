@@ -10,6 +10,16 @@ import { CheckBox } from "../../components/CheckBox";
 
 
 
+let selectedUserType: string | null = null;
+
+export function setSelectedUserType(type: string) {
+    selectedUserType = type;
+}
+
+export function getSelectedUserType() {
+    return selectedUserType;
+}
+
 
 export default function Login (){
 
@@ -28,8 +38,6 @@ export default function Login (){
         setIsFuncionario(type === 'funcionario');
         setIsTecnico(type === 'tecnico');
     };
-
-
 
 
     async function getLogin() {
@@ -59,11 +67,17 @@ export default function Login (){
             setTimeout(() => {
                 setLoading(false);
                 if (email == 'a' && password == 'a') {
-                    Alert.alert('Login realizado com sucesso!');
                     if (isFuncionario){
+                        setSelectedUserType('FUNCIONÁRIO');
+                        Alert.alert('Login realizado com sucesso!');
                         navigation.reset({ routes: [{ name: "BottomRoutes" }] });}
                     else if (isTecnico){
+                        setSelectedUserType('TÉCNICO');
+                        Alert.alert('Login realizado com sucesso!');
                         navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
+                    else{
+                        Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');
+                    }
                 } else {
                     Alert.alert('ATENÇÃO', 'Usuário ou senha inválidos!');
                 }

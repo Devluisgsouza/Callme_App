@@ -6,7 +6,7 @@ export const style = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
+
         
     },
     
@@ -23,6 +23,7 @@ export const style = StyleSheet.create({
         width: '100%',
         paddingHorizontal: 30,
         backgroundColor: 'white',
+        marginTop: -10
     },
 
 
@@ -54,6 +55,6 @@ export const style = StyleSheet.create({
     },
     
     Botton: {
-        marginTop: -100
+        marginTop:-160
     }
 })

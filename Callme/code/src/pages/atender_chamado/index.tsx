@@ -1,31 +1,23 @@
 import React from "react";
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import { style } from './styles';
 
 
 
 
-export default function Atender_chamados(){
+export default function Perfil(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text>Ola Atender Chamados</Text>
-
+                <Text style={style.Textinicial}>ATENDER CHAMADOS</Text>  
             </View>
 
             <View style={style.boxMid}>
                 <Text>Ola Menu</Text>
-
             </View>
 
-            <View style={style.boxFinal}>
-                <Text>Ola Menu</Text>
-
-            </View>
       </View>
-
-      
-        
+     
     )
 }
 

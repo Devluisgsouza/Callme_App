@@ -58,5 +58,18 @@ export function ButtonMenu({...rest}:Props) {
 }
 
 
+export function ButtonTextalterar({...rest}:Props) {
+    return(
+        <TouchableOpacity 
+            style={style.Buttontextalterar}
+            {...rest}
+            activeOpacity={0.6}
+        >
+            {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton2}>{rest.text}</Text> }
+        </TouchableOpacity>
+    )
+}
+
+
 
 

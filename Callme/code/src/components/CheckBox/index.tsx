@@ -9,7 +9,7 @@ interface Props {
 
 export const CheckBox: React.FC<Props> = ({ value, onChange }) => {
   return (
-    <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 10 }}>
+    <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 40 }}>
       <TouchableOpacity
         style={{ flexDirection: 'row', alignItems: 'center', marginRight: 20 }}
         onPress={() => onChange('tecnico')}

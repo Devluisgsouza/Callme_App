@@ -11,7 +11,7 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'black',
         borderRadius: 40,
-        marginTop: 20,
+        marginTop: 80,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
@@ -34,7 +34,7 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'white',
         borderRadius: 40,
-        marginTop: 160,
+        marginTop: 90,
         
     },
 
@@ -73,6 +73,16 @@ export const style = StyleSheet.create({
         shadowRadius:40.00,
         elevation:9,
         shadowColor: 'black',
+    },
+
+    Buttontextalterar: {
+        width: 170,
+        height: 22,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 60,
+        textDecorationLine: 'underline',
+        borderRadius: 50
     },
 
 })

@@ -20,7 +20,7 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/3,
         width: '100%',
         paddingHorizontal: 40,
-        backgroundColor: 'red'
+
 
     },
 
@@ -67,7 +67,7 @@ export const style = StyleSheet.create({
     },
 
     TextFinal: {
-        marginTop: 160,
+        marginTop: 90,
         fontSize: 15,
         fontWeight: 'bold',
         color: 'gray'

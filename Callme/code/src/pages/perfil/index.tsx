@@ -4,6 +4,8 @@ import { style } from './styles';
 import Logo from '../../assets/Conta.png';
 import { ButtonTextalterar } from "../../components/Button";
 import { getSelectedUserType } from '../login';
+import { getSelectedUserType2 } from "../criar_login";
+
 
 export default function Perfil(){
     const [userType, setUserType] = useState<string | null>(null);
@@ -12,6 +14,12 @@ export default function Perfil(){
         const type = getSelectedUserType();
         setUserType(type);
     }, []);
+
+    useEffect(() => {
+        const type = getSelectedUserType2();
+        setUserType(type);
+    }, []);
+
 
     async function getalterar() {
         return Alert.alert('ATENÇÃO','Impossível alterar seus dados! entre em contato com o suporte técnico para alterá-los.');

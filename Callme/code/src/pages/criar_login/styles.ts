@@ -23,7 +23,7 @@ export const style = StyleSheet.create({
         width: '100%',
         paddingHorizontal: 30,
         backgroundColor: 'white',
-        marginTop: -10
+        marginTop: -30
     },
 
 
@@ -31,21 +31,21 @@ export const style = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: 'black',
-        marginTop: -20,
+        marginTop: -40,
         marginStart: 20
     },
 
     logo: {
         width: 70,
         height: 170,
-        marginTop: -20,
+        marginTop: -40,
         marginStart: -30,
     },
 
     logo2: {
         width: 200,
         height: 100,
-        marginTop: -30,
+        marginTop: -40,
     },
 
     TextCaixa: {
@@ -55,6 +55,6 @@ export const style = StyleSheet.create({
     },
     
     Botton: {
-        marginTop:-160
+        marginTop:-120
     }
 })

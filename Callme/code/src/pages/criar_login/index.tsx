@@ -7,9 +7,19 @@ import { Input } from "../../components/input";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import {MaterialIcons, Octicons} from '@expo/vector-icons';
 import { Button} from "../../components/Button";
+import { CheckBox } from "../../components/CheckBox";
 
 
 
+let selectedUserType2: string | null = null;
+
+export function setSelectedUserType2(type: string) {
+    selectedUserType2 = type;
+}
+
+export function getSelectedUserType2() {
+    return selectedUserType2;
+}
 
 
 export default function Criar_Login(){
@@ -25,6 +35,14 @@ export default function Criar_Login(){
     const [loading,setLoading] = useState(false);
     const [nomeError, setNomeError] = useState(false);
     const [reError, setReError] = useState(false);
+    const [userType, setUserType] = useState<'tecnico' | 'funcionario' | null>(null);
+    const [isFuncionario, setIsFuncionario] = useState(false);
+    const [isTecnico, setIsTecnico] = useState(false);
+    const handleUserTypeChange = (type: 'tecnico' | 'funcionario') => {
+        setUserType(type);
+        setIsFuncionario(type === 'funcionario');
+        setIsTecnico(type === 'tecnico');
+    }
 
 
     async function getCriarLogin() {
@@ -65,8 +83,17 @@ export default function Criar_Login(){
         
                 setTimeout(() => {
                     setLoading(false);
-                    Alert.alert('Login realizado com sucesso!');
-                    navigation.reset({ routes: [{ name: "BottomRoutes" }] });
+                    if (isFuncionario){
+                            setSelectedUserType2('FUNCIONÁRIO');
+                            Alert.alert('Login realizado com sucesso!');
+                            navigation.reset({ routes: [{ name: "BottomRoutes" }] });}
+                        else if (isTecnico){
+                            setSelectedUserType2('TÉCNICO');
+                            Alert.alert('Login realizado com sucesso!');
+                            navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
+                        else{
+                            Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');
+                        }
                     }, 1000);
                 
             } catch (error) {
@@ -97,6 +124,7 @@ export default function Criar_Login(){
             </View>
 
             <View style={style.boxMid}>
+                <CheckBox value={userType} onChange={handleUserTypeChange} />
                 <Input
                 value={nome}
                 onChangeText={(text) => {

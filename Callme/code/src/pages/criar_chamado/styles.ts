@@ -5,8 +5,7 @@ import { Dimensions, StyleSheet } from "react-native";
 export const style = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'black'
-        
+        backgroundColor: 'black',      
     },
     
     boxTop: {
@@ -30,16 +29,6 @@ export const style = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: 'white',
-        marginTop: 10
-
-
-    },
-
-    logo: {
-        width: 70,
-        height: 170,
-        marginTop: -30
-
-
+        marginTop: 10,
     },
 })

@@ -28,6 +28,7 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/3,
         width: '100%',
         alignItems: 'center',
+        marginTop: 10
 
     },
 
@@ -87,4 +88,11 @@ export const style = StyleSheet.create({
         fontSize: 50,
         color: 'black'
     },
+
+    textfunc: {
+        fontSize: 20,
+        fontWeight: '500',
+        marginTop: 20,
+        textAlign: 'center',
+    }
 })

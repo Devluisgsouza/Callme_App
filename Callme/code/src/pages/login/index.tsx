@@ -108,10 +108,10 @@ export default function Login (){
                     style={style.logo}
                     resizeMode="contain"     
                 />
-                <Text style={style.text}>Faça seu Login</Text>
-                
+                <Text style={style.text}>Faça seu Login</Text>  
             </View>
             <View style={style.boxMid}>
+                <Text style={style.textfunc}>QUAL SUA FUNÇÃO</Text>
                 <CheckBox value={userType} onChange={handleUserTypeChange} />
                 <Input
                     value={email}

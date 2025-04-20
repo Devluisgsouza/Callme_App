@@ -42,7 +42,7 @@ export default function Menu(){
 
             <View style={style.boxMid}>
                 <View style={style.blackSquare}>
-                    <Text style={style.title}>Bem vindo!</Text>
+                    <Text style={style.title}>BEM VINDO!</Text>
                 </View>
 
                 <View style={style.blackSquareBig}>

@@ -64,13 +64,13 @@ export const style = StyleSheet.create({
     },
 
     blackSquare: {
-        width: 240,
+        width: 260,
         height: 70,
         backgroundColor: 'black',
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 20,
-        borderRadius: 30,
+        borderRadius: 20,
         shadowOffset: {
             width: 0,
             height: 12,
@@ -81,12 +81,12 @@ export const style = StyleSheet.create({
       },
 
       blackSquareBig: {
-        width: 370,
+        width: 355,
         height: 135,
         backgroundColor: 'white',
         alignItems: 'center',
         marginTop: 20,
-        borderRadius: 30,
+        borderRadius: 20,
         borderWidth: 3,
         borderColor: 'black',
         shadowOffset: {

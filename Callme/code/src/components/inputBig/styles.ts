@@ -4,17 +4,18 @@ import { StyleSheet } from "react-native";
 export const style = StyleSheet.create({
 
     BoxInput: {
-        width: '100%',
-        height: 40,
+        width: 300,
+        height: 120,
         borderWidth: 1,
-        borderRadius: 40,
+        borderRadius: 15,
         marginTop: 10,
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 12,
+        paddingHorizontal: 20,
         backgroundColor: 'lightgray',
         borderColor: 'gray',
         justifyContent: 'space-between',
+        
     },
 
     input: {
@@ -22,12 +23,14 @@ export const style = StyleSheet.create({
         width: '90%',
         borderRadius: 40,
         justifyContent: 'space-between',
+        textAlignVertical: "top",
+        
     },
 
     titleInput: {
-        marginLeft: 5,
         fontSize: 15,
         marginTop: 30,
+
         
     },
 

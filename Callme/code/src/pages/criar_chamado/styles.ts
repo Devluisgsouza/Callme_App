@@ -31,4 +31,17 @@ export const style = StyleSheet.create({
         color: 'white',
         marginTop: 10,
     },
+
+    label: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 5,
+        marginTop: 40,
+      },
+
+    TitleBox: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 5,
+    }
 })

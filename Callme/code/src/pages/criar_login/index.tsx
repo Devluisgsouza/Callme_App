@@ -41,13 +41,11 @@ export default function Criar_Login(){
     const [userType2, setUserType2] = useState<'tecnico' | 'funcionario' | null>(null);
     const [isFuncionario2, setIsFuncionario2] = useState(false);
     const [isTecnico2, setIsTecnico2] = useState(false);
-    const [isNull, setIsNull] = useState(false);
 
-    const handleUserTypeChange2 = (type: 'tecnico' | 'funcionario' | null) => {
+    const handleUserTypeChange2 = (type: 'tecnico' | 'funcionario') => {
         setUserType2(type);
         setIsFuncionario2(type === 'funcionario');
         setIsTecnico2(type === 'tecnico');
-        setIsNull(type === null);
     }
 
 
@@ -97,7 +95,7 @@ export default function Criar_Login(){
                         setSelectedUserType2('TÉCNICO');
                         Alert.alert('Login realizado com sucesso!');
                         navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
-                    else if(isNull){
+                    else{
                         setSelectedUserType2('')
                         Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');}
                     }, 1000);

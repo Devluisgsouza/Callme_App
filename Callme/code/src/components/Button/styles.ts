@@ -58,13 +58,13 @@ export const style = StyleSheet.create({
     },
 
     ButtonMenu: {
-        width: 185,
+        width: 170,
         height: 100,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: 'black',
         borderRadius: 15,
-        marginLeft:8,
+        marginLeft:18,
         marginTop: 10,
         shadowOffset: {
             width: 0,

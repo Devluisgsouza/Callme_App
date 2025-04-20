@@ -17,8 +17,11 @@ export function setSelectedUserType(type: string) {
 }
 
 export function getSelectedUserType() {
-    return selectedUserType;
+    const type = selectedUserType;
+    selectedUserType = null;
+    return type;
 }
+
 
 
 export default function Login (){
@@ -76,8 +79,8 @@ export default function Login (){
                         Alert.alert('Login realizado com sucesso!');
                         navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
                     else{
-                        Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');
-                    }
+                        setSelectedUserType('')
+                        Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');}
                 } else {
                     Alert.alert('ATENÇÃO', 'Usuário ou senha inválidos!');
                 }

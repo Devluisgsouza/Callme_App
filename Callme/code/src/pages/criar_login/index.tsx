@@ -18,8 +18,11 @@ export function setSelectedUserType2(type: string) {
 }
 
 export function getSelectedUserType2() {
-    return selectedUserType2;
+    const type = selectedUserType2;
+    selectedUserType2 = null; 
+    return type;
 }
+
 
 
 export default function Criar_Login(){
@@ -35,13 +38,16 @@ export default function Criar_Login(){
     const [loading,setLoading] = useState(false);
     const [nomeError, setNomeError] = useState(false);
     const [reError, setReError] = useState(false);
-    const [userType, setUserType] = useState<'tecnico' | 'funcionario' | null>(null);
-    const [isFuncionario, setIsFuncionario] = useState(false);
-    const [isTecnico, setIsTecnico] = useState(false);
-    const handleUserTypeChange = (type: 'tecnico' | 'funcionario') => {
-        setUserType(type);
-        setIsFuncionario(type === 'funcionario');
-        setIsTecnico(type === 'tecnico');
+    const [userType2, setUserType2] = useState<'tecnico' | 'funcionario' | null>(null);
+    const [isFuncionario2, setIsFuncionario2] = useState(false);
+    const [isTecnico2, setIsTecnico2] = useState(false);
+    const [isNull, setIsNull] = useState(false);
+
+    const handleUserTypeChange2 = (type: 'tecnico' | 'funcionario' | null) => {
+        setUserType2(type);
+        setIsFuncionario2(type === 'funcionario');
+        setIsTecnico2(type === 'tecnico');
+        setIsNull(type === null);
     }
 
 
@@ -83,17 +89,17 @@ export default function Criar_Login(){
         
                 setTimeout(() => {
                     setLoading(false);
-                    if (isFuncionario){
-                            setSelectedUserType2('FUNCIONÁRIO');
-                            Alert.alert('Login realizado com sucesso!');
-                            navigation.reset({ routes: [{ name: "BottomRoutes" }] });}
-                        else if (isTecnico){
-                            setSelectedUserType2('TÉCNICO');
-                            Alert.alert('Login realizado com sucesso!');
-                            navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
-                        else{
-                            Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');
-                        }
+                    if (isFuncionario2){
+                        setSelectedUserType2('FUNCIONÁRIO');
+                        Alert.alert('Login realizado com sucesso!');
+                        navigation.reset({ routes: [{ name: "BottomRoutes" }] });}
+                    else if (isTecnico2){
+                        setSelectedUserType2('TÉCNICO');
+                        Alert.alert('Login realizado com sucesso!');
+                        navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
+                    else if(isNull){
+                        setSelectedUserType2('')
+                        Alert.alert('ATENÇÃO', 'Preencha se você é (Técnico) ou (Funcionário)!');}
                     }, 1000);
                 
             } catch (error) {
@@ -124,7 +130,7 @@ export default function Criar_Login(){
             </View>
 
             <View style={style.boxMid}>
-                <CheckBox value={userType} onChange={handleUserTypeChange} />
+                <CheckBox value={userType2} onChange={handleUserTypeChange2} />
                 <Input
                 value={nome}
                 onChangeText={(text) => {

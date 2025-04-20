@@ -3,12 +3,16 @@ import { Text, View, Image, Alert } from 'react-native';
 import { style } from './styles';
 import Logo from '../../assets/Conta.png';
 import { ButtonTextalterar } from "../../components/Button";
-import { getSelectedUserType } from '../login';
+import { getSelectedUserType } from "../login";
 import { getSelectedUserType2 } from "../criar_login";
 
 
+
+
 export default function Perfil(){
+
     const [userType, setUserType] = useState<string | null>(null);
+    const [userType2, setUserType2] = useState<string | null>(null);
 
     useEffect(() => {
         const type = getSelectedUserType();
@@ -17,8 +21,9 @@ export default function Perfil(){
 
     useEffect(() => {
         const type = getSelectedUserType2();
-        setUserType(type);
+        setUserType2(type);
     }, []);
+
 
 
     async function getalterar() {
@@ -61,7 +66,9 @@ export default function Perfil(){
                 <View style={style.infoContainer}>
                     <Text style={style.infoTitle}>FUNÇÃO</Text>
                     <View style={style.boxInfo}>
-                        <Text style={style.infoText}>{userType ?? 'NÃO DEFINIDO'}</Text>
+                        <Text style={style.infoText}>
+                            {userType || userType2 || 'NÃO DEFINIDO'}
+                        </Text>
                     </View>
                 </View>
                 

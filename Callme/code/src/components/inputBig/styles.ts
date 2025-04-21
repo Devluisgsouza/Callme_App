@@ -7,7 +7,7 @@ export const style = StyleSheet.create({
         width: 300,
         height: 120,
         borderWidth: 1,
-        borderRadius: 15,
+        borderRadius: 10,
         marginTop: 10,
         flexDirection: 'row',
         alignItems: 'center',
@@ -30,8 +30,6 @@ export const style = StyleSheet.create({
     titleInput: {
         fontSize: 15,
         marginTop: 30,
-
-        
     },
 
     Icon:{

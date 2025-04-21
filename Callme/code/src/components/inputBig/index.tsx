@@ -41,11 +41,11 @@ const CalculateSizePaddingLef = () => {
     }else if(IconLeft || IconRight){
         return 10;
     }else{
-        return 20;
+        return 10;
     }
 };
-    
-    
+
+
     return (
         <Fragment>
             {title&&<Text style={style.titleInput}>{title}</Text>}

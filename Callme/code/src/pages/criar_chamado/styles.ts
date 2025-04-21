@@ -43,5 +43,11 @@ export const style = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
         marginBottom: 5,
+    },
+
+    TitleList: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginTop: 40,
     }
 })

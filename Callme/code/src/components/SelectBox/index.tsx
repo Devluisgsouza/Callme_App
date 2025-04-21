@@ -4,6 +4,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 interface SelectMultipleProps {
   options: string[];
   selectedValue: string | null;
+  onChangeText: (value: string) => void;
   onSelect: (value: string) => void;
 }
 

@@ -5,7 +5,7 @@ import { style } from './styles';
 
 
 
-export default function Perfil(){
+export default function Atender_chamados(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>

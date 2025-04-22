@@ -99,7 +99,7 @@ export default function Login (){
     }
 
     async function getsenha() {
-        return Alert.alert('ATENÇÃO','Impossível recuperar senha! entre em contato com o suporte técnico para alterá-la.')
+        return Alert.alert('ATENÇÃO','Impossível recuperar senha! Entre em contato com o suporte técnico para alterá-la.')
     }
 
 

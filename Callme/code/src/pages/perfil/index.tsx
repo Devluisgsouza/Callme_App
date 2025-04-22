@@ -27,7 +27,7 @@ export default function Perfil(){
 
 
     async function getalterar() {
-        return Alert.alert('ATENÇÃO','Impossível alterar seus dados! entre em contato com o suporte técnico para alterá-los.');
+        return Alert.alert('ATENÇÃO','Impossível alterar seus dados! Entre em contato com o suporte técnico para alterá-los.');
     }
 
     return(

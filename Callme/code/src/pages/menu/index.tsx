@@ -14,7 +14,7 @@ export default function Menu(){
     const navigation = useNavigation<NavigationProp<any>>();
     
     async function criar_chamado(){
-        navigation.navigate("criar_chamado")
+        navigation.navigate("Criar_chamado")
     }
 
     async function chamados(){

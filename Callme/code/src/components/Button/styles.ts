@@ -85,4 +85,32 @@ export const style = StyleSheet.create({
         borderRadius: 50
     },
 
+    ButtonChat: {
+        width: 50,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'lightgray',
+        borderRadius: 40,
+        borderWidth: 2,
+        borderColor: 'gray',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.29,
+        shadowRadius: 4.65,
+        elevation: 7,
+
+        marginTop: 15,
+        marginLeft: 330,
+        
+    },
+
+    Icon: {
+        fontSize: 30,
+        color: 'gray',
+    }
+
 })

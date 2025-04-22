@@ -1,11 +1,22 @@
 import React from "react";
 import { Text, View, Image } from 'react-native';
 import { style } from './styles';
+import { ButtonChat } from '../../components/Button';
+import {MaterialIcons} from '@expo/vector-icons';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
 
 
 
+export default function Visualizar_chamados(){
 
-export default function Perfil(){
+
+    const navigation = useNavigation<NavigationProp<any>>();
+
+    async function getChat(){
+        navigation.navigate("Chat_IA")
+    }
+
+
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
@@ -13,7 +24,10 @@ export default function Perfil(){
             </View>
 
             <View style={style.boxMid}>
-                <Text>Ola Menu</Text>
+                <ButtonChat 
+                icon={MaterialIcons} 
+                iconName="chat" 
+                onPress={() => getChat()}/>
             </View>
 
       </View>

@@ -36,7 +36,7 @@ export const style = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
         marginBottom: 5,
-        marginTop: 40,
+        marginTop: 70,
       },
 
     TitleBox: {

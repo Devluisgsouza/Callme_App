@@ -3,7 +3,7 @@ import React from "react";
 import Menu from "../pages/menu";
 import Perfil from "../pages/perfil";
 import Chamados from "../pages/chamados";
-import Criar_Chamado from "../pages/criar_chamado";
+import Criar_chamado from "../pages/Criar_chamado";
 import CustomTabBar from "../components/CustomTabBar";
 
 
@@ -22,8 +22,8 @@ export default function BottomRoutes(){
                 component={Menu}
                 />
             <tab.Screen 
-                name="CriarChamado" 
-                component={Criar_Chamado}
+                name="Criar_chamado"
+                component={Criar_chamado}
                 />
             <tab.Screen 
                 name="Chamados" 

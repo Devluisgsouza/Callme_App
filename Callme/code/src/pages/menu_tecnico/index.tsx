@@ -9,7 +9,7 @@ import { ButtonMenu } from "../../components/Button";
 
 
 
-export default function MenuTecnico(){
+export default function Menu_Tecnico(){
 
     const navigation = useNavigation<NavigationProp<any>>();
     

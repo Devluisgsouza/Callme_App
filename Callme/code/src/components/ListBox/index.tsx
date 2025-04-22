@@ -1,20 +1,22 @@
-// src/components/MeuDropdown.tsx
-
-import React, { useState } from 'react';
+import React from 'react';
 import { View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { style } from './styles';
 
+type MeuDropdownProps = {
+  selectedValue: string;
+  onValueChange: (itemValue: string) => void;
+};
 
-const MeuDropdown: React.FC = () => {
-  
-  const [selecionado, setSelecionado] = useState<string>('opcao1');
-
+const MeuDropdown: React.FC<MeuDropdownProps> = ({
+  selectedValue,
+  onValueChange,
+}) => {
   return (
     <View style={style.container}>
       <Picker
-        selectedValue={selecionado}
-        onValueChange={(itemValue) => setSelecionado(itemValue)}
+        selectedValue={selectedValue}
+        onValueChange={onValueChange}
         style={style.picker}
       >
         <Picker.Item label="--Selecione--" value="Selecione" />
@@ -24,7 +26,6 @@ const MeuDropdown: React.FC = () => {
         <Picker.Item label="Outros" value="Outros" />
         <Picker.Item label="Não sei" value="Não sei" />
       </Picker>
-
     </View>
   );
 };

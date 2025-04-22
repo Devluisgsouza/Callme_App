@@ -1,9 +1,8 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
 import Perfil from "../pages/perfil";
-import Chamados from "../pages/chamados";
 import CustomTecnicoTabBar from "../components/CustomTecnicoTabBar";
-import MenuTecnico from "../pages/menu_tecnico";
+import Menu_Tecnico from "../pages/menu_tecnico";
 import Visualizar_chamados_tecnico from "../pages/cahamados_tecnico";
 import Atender_chamados from "../pages/atender_chamado";
 
@@ -20,7 +19,7 @@ export default function BottomTecnicoRoutes(){
         >
             <tab.Screen 
                 name="Menu_tecnico" 
-                component={MenuTecnico}
+                component={Menu_Tecnico}
                 />
             <tab.Screen 
                 name="Chamados_tecnico" 

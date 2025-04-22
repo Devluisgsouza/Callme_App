@@ -10,7 +10,7 @@ import { useNavigation, NavigationProp } from '@react-navigation/native';
 
 
 
-export default function Perfil() {
+export default function Criar_chamado() {
 
   const navigation = useNavigation<NavigationProp<any>>();
   const [loading,setLoading] = useState(false);
@@ -39,7 +39,12 @@ export default function Perfil() {
         } else {
           setDescriçãoError(false);
         }
-
+        if (tipo === '' || tipo === 'Selecione') {
+          setTipoError(true);
+          hasError = true;
+        } else {
+          setTipoError(false);
+        }
         if (hasError) {
             return Alert.alert('ATENÇÃO', 'Preencha os campos obrigatórios marcados com ( * )!');
         }
@@ -91,8 +96,15 @@ export default function Perfil() {
         />
         <Text style={style.TitleList}>
             SELECIONE O TIPO DO SEU CHAMADO:
+            {tipoError && <Text style={{ color: 'red' }}> *</Text>}
         </Text>
-        <MeuDropdown />
+        <MeuDropdown 
+          selectedValue={tipo}
+          onValueChange={(value) => {
+            setTipo(value);
+            if (value && value !== 'Selecione') setTipoError(false);
+          }}
+        />
         <View style={{marginTop: -10}}>
           <Button text="ENVIAR CHAMADO" Loading={loading} onPress={() => getChamado()} />
         </View>

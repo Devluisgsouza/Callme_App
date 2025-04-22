@@ -1,15 +1,15 @@
-import React from "react";
-import { Text, View, Image } from 'react-native';
+import React from 'react';
+import { View, Text } from "react-native";
 import { style } from './styles';
 
 
 
+export default function Chat_IA (){
 
-export default function Visualizar_chamados_tecnico(){
-    return(
+return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text style={style.Textinicial}>CHAMADOS</Text>  
+                <Text style={style.Textinicial}>CHAT</Text>  
             </View>
 
             <View style={style.boxMid}>
@@ -17,8 +17,5 @@ export default function Visualizar_chamados_tecnico(){
             </View>
 
       </View>
-     
-    )
+)
 }
-
-

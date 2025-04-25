@@ -31,3 +31,25 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 
 - [Descrição Caso de Uso](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Descrição_caso_de_uso.docx)
 
+
+## 🆙 Como Contribuir
+
+### Passo 1
+
+- Clonar o repositório 
+
+### Passo 2
+
+- Instalar Android Studio
+
+### Passo 3
+
+- Instalar o Node.js
+
+### Passo 4
+
+- Digitar os comandos: 
+
+    - npm install
+    - npm run android
+

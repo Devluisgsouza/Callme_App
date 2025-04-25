@@ -1,13 +1,12 @@
 <h1 align='center'>
     <img src='./Callme/code/src/assets/logo1.png'>
-    <p>CALLME APP
     <p>The future of service
 </h1>
 
 
 ## 📕 Sobre
 
-**Callme App** é um software utilizado para gerenciar chamados realizados por funcionários para a assistência técnica integrado a IA, os funcionários criam chamados através do Software, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.
+**Callme App** é um software mobile utilizado para gerenciar chamados realizados por funcionários para a assistência técnica integrado a IA, os funcionários criam chamados através do app, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.
 
 Utilizando o método ágil Scrum construimos o software com React Native e linguagem TypeScript.
 
@@ -27,29 +26,32 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 ## 🗒️ Modelagem de Requisitos
 
 - [Diagramas](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Diagrama_de_caso_de_uso_sistema.asta)
- - [Sprints Backlog](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Sprints_Backlog.docx)
-
+- [Sprints Backlog](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Sprints_Backlog.docx)
 - [Descrição Caso de Uso](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Descrição_caso_de_uso.docx)
 
 
 ## 🆙 Como Contribuir
 
-### Passo 1
+```bash
+    # Clone o projeto
+    $ git clone https://github.com/Devluisgsouza/Callme_App.git 
+```
 
-- Clonar o repositório 
+```bash
+    # Entre na pasta do código
+    $ cd Callme/code
+```
 
-### Passo 2
+- Instale o [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwtdi_BhACEiwA97y8BK-tY4oR5cK3W_CzLqqa771C1-3OcUvI-uAFNPAHbnRxR6vZxkYKlxoC7z0QAvD_BwE&hl=pt-br)
 
-- Instalar Android Studio
+- Instale o [Node.js](https://nodejs.org/pt)
 
-### Passo 3
+```bash
+    # Instale a dependência
+    $ npm install
+```
 
-- Instalar o Node.js
-
-### Passo 4
-
-- Digitar os comandos: 
-
-    - npm install
-    - npm run android
-
+```bash
+    # Conectar o código ao emulador android
+    $ npm run android
+```

@@ -57,10 +57,20 @@ export const style = StyleSheet.create({
         width: '100%',
         height: 100,
         fontWeight: 'bold',
-        fontSize: 25,
+        fontSize: 22,
         color: 'white',
         marginStart: 20,
-        marginTop: 13,
+        marginTop: 15,
         
     },
+
+    TextMid: {
+        width: '100%',
+        height: 100,
+        fontWeight: 'bold',
+        fontSize: 24,
+        color: 'black',
+        marginStart: 20,
+        marginTop: 15,
+    }
 })

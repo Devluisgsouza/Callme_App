@@ -60,8 +60,8 @@ const CalculateSizePaddingLef = () => {
                     {...rest}
                 />
                 {IconRight && iconRightName &&(
-                <TouchableOpacity onPress={onIconRightPress} style={style.button}>
-                    <IconRight name={iconRightName as any} size={20} color={'gray'} style={style.Icon} onPress={() => getMessage()} />
+                <TouchableOpacity onPress={onIconRightPress} activeOpacity={0.2} style={style.button}>
+                    <IconRight name={iconRightName as any} size={20} color={'white'} style={style.Icon} onPress={onIconRightPress} />
                 </TouchableOpacity>
                 )}
 

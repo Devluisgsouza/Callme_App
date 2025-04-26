@@ -15,7 +15,7 @@ export const style = StyleSheet.create({
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1.149,
+        height: Dimensions.get('window').height/1.38,
         width: '100%',
         alignItems: 'center',
         backgroundColor: "black",
@@ -25,6 +25,13 @@ export const style = StyleSheet.create({
         borderStartEndRadius: 30,
         borderColor: 'white',
         borderWidth: 3,
+    },
+
+    boxChat: {
+        height: Dimensions.get('window').height/13,
+        width: '100%',
+        alignItems: 'center',
+        backgroundColor: "black",
     },
 
 

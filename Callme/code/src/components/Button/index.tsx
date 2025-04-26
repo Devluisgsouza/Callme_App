@@ -11,6 +11,9 @@ type Props = TouchableHighlightProps & {
     Loading?:boolean,
     icon?: IconComponent,
     iconName?: string,
+    boderColor?:string,
+    boderWidth?:number,
+    boderRadius?:number,
 }
 
 
@@ -32,7 +35,7 @@ export function ButtonText({...rest}:Props) {
         <TouchableOpacity 
             style={style.Buttontext}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton2}>{rest.text}</Text> }
         </TouchableOpacity>
@@ -44,7 +47,7 @@ export function ButtonTextsenha({...rest}:Props) {
         <TouchableOpacity 
             style={style.Buttontextsenha}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton2}>{rest.text}</Text> }
         </TouchableOpacity>
@@ -69,7 +72,7 @@ export function ButtonTextalterar({...rest}:Props) {
         <TouchableOpacity 
             style={style.Buttontextalterar}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton2}>{rest.text}</Text> }
         </TouchableOpacity>
@@ -82,7 +85,7 @@ export function ButtonChat({...rest}:Props) {
         <TouchableOpacity 
             style={style.ButtonChat}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {<MaterialIcons style={style.Icon}>{rest.iconName}</MaterialIcons> }
         </TouchableOpacity>
@@ -96,7 +99,7 @@ export function ButtonQuest({...rest}:Props) {
         <TouchableOpacity 
             style={style.ButtonQuest}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {<MaterialIcons style={style.Icon2}>{rest.iconName}</MaterialIcons> }
         </TouchableOpacity>
@@ -110,7 +113,7 @@ export function ButtonBack({...rest}:Props) {
         <TouchableOpacity 
             style={style.ButtonBack}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {<MaterialIcons style={style.Icon3}>{rest.iconName}</MaterialIcons> }
         </TouchableOpacity>

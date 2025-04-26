@@ -36,7 +36,7 @@ export default function Visualizar_chamados(){
         </View>
             <View style={style.boxChat}>
                 <View style={{ flexDirection: 'row'}}>
-                    <Text style={style.TextChat}>CHAT COM IA</Text>
+                    <Text style={style.TextChat}>FALE COM A IA DA CALLME</Text>
                     <ButtonChat 
                     icon={MaterialIcons} 
                     iconName="chat" 
@@ -45,12 +45,14 @@ export default function Visualizar_chamados(){
             </View>
 
             <View style={style.boxMid}>
-                
+                <Text style={style.TextMid}>Chamados finalizados</Text>
+
+                <Text style={style.TextMid}>Chamados aguardando</Text>
+
+                <Text style={style.TextMid}>Chamados em andamento</Text>
             </View>
 
       </View>
      
     )
 }
-
-

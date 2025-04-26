@@ -8,12 +8,11 @@ export const style = StyleSheet.create({
         height: 50,
         borderWidth: 3,
         borderRadius: 30,
-        marginTop: 630,
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 12,
         backgroundColor: 'black',
         borderColor: 'white',
+        marginTop: 5,
         
     },
 
@@ -33,7 +32,9 @@ export const style = StyleSheet.create({
     },
 
     Icon:{
-        width: '100%'
+        width: '50%',
+        backgroundColor: 'black',
+        
     },
 
     button:{

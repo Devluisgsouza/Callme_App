@@ -5,6 +5,11 @@ import { ButtonBack } from '../../components/Button';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 
+
+
+
+
+
 export default function Chat_IA (){
 
 
@@ -12,9 +17,8 @@ export default function Chat_IA (){
     const [message,setMessage] = useState('');
 
     async function getChamados(){
-        navigation.navigate("chamados")
+        navigation.reset({ routes: [{ name: "BottomRoutes"  }] });
     }
-
 
 return(
         <View style={style.container}>
@@ -22,20 +26,30 @@ return(
                     <ButtonBack 
                         icon={MaterialIcons} 
                         iconName="arrow_back" 
-                        onPress={() => getChamados()}/>
+                        onPress={() => getChamados()}
+                        />
                     <Text style={style.Textinicial}>CHAT IA</Text>  
             </View>
 
             <View style={style.boxMid}>
-                <Input
-                    value={message}
-                    onChangeText={(text) => {
-                        setMessage(text);}}
-                    IconRight={MaterialIcons}
-                    iconRightName="send"
-                />
+                <Text style={{color: 'white', fontSize: 15, marginTop: 30}}>Olá, sou a IA da CallMe. Como posso ajudar?</Text>
+                <Text>message</Text>
+                
             </View>
 
+            <View style={style.boxChat}>
+            <Input
+                value={message}
+                onChangeText={(text) => {
+                    setMessage(text);}}
+                IconRight={MaterialIcons}
+                iconRightName="send"
+                onIconRightPress={() => {
+                    setMessage('');
+                }}
+                />
+            </View>
+      
       </View>
 )
 }

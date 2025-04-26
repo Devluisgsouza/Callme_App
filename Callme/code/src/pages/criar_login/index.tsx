@@ -89,11 +89,11 @@ export default function Criar_Login(){
                     setLoading(false);
                     if (isFuncionario2){
                         setSelectedUserType2('FUNCIONÁRIO');
-                        Alert.alert('Login realizado com sucesso!');
+                        Alert.alert('Conta criada com sucesso!');
                         navigation.reset({ routes: [{ name: "BottomRoutes" }] });}
                     else if (isTecnico2){
                         setSelectedUserType2('TÉCNICO');
-                        Alert.alert('Login realizado com sucesso!');
+                        Alert.alert('Conta criada com sucesso!');
                         navigation.reset({ routes: [{ name: "BottomTecnicoRoutes"}]});}
                     else{
                         setSelectedUserType2('')

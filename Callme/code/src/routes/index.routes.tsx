@@ -10,6 +10,7 @@ import BottomTecnicoRoutes from "./botton.tecnico.routes";
 import Visualizar_chamados_tecnico from "../pages/cahamados_tecnico";
 import Atender_chamados from "../pages/atender_chamado";
 import Chat_IA from "../pages/Chat_IA";
+import Inicial from "../pages/Initial";
 
 
 
@@ -19,7 +20,7 @@ export default function Routes(){
 
     return(
         <Stack.Navigator
-            initialRouteName="Login"
+            initialRouteName="Inicial"
             screenOptions={{
                 headerShown:false,
                 cardStyle:{
@@ -27,7 +28,10 @@ export default function Routes(){
                 }
             }}
         >
-
+            <Stack.Screen
+                name="Inicial"
+                component={Inicial}
+            />
             <Stack.Screen
                 name="Login"
                 component={Login}

@@ -1,5 +1,5 @@
 import {  StyleSheet } from "react-native";
-import { ButtonBack, ButtonMenu } from ".";
+
 
 
 
@@ -11,6 +11,8 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'black',
         borderRadius: 40,
+        borderColor: 'white',
+        borderWidth: 2,
         marginTop: 80,
         shadowColor: '#000',
         shadowOffset: {

@@ -11,24 +11,29 @@ export default function Chat_IA (){
     const navigation = useNavigation<NavigationProp<any>>();
     const [message,setMessage] = useState('');
 
-    async function getBack(){
-        navigation.reset({ routes: [{ name: "BottomRoutes" }] });
+    async function getChamados(){
+        navigation.navigate("chamados")
     }
 
 
 return(
         <View style={style.container}>
             <View style={style.boxTop}>
-        
                     <ButtonBack 
                         icon={MaterialIcons} 
                         iconName="arrow_back" 
-                        onPress={() => getBack()}/>
+                        onPress={() => getChamados()}/>
                     <Text style={style.Textinicial}>CHAT IA</Text>  
             </View>
 
             <View style={style.boxMid}>
-                <Text>Ola Menu</Text>
+                <Input
+                    value={message}
+                    onChangeText={(text) => {
+                        setMessage(text);}}
+                    IconRight={MaterialIcons}
+                    iconRightName="send"
+                />
             </View>
 
       </View>

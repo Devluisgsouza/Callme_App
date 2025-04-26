@@ -16,15 +16,17 @@ type Props = TextInputProps & {
     IconRight?: IconComponent,
     iconLeftName?: string,
     iconRightName?: string,
-    title?: ReactElement,
-    onIconLeftPress?: () => void,
     onIconRightPress?: () => void,
+    onChangeText?: (text: string) => void,
+    opacity?: number,
+    onPress?: () => void,
+
 }
 
 
 export const Input = forwardRef((Props:Props, ref: LegacyRef<TextInput> | null)=>{
     
-    const {IconLeft, IconRight, iconLeftName, iconRightName, title, onIconLeftPress, onIconRightPress, ...rest } = Props
+    const {IconLeft, IconRight, iconLeftName, iconRightName, onIconRightPress, ...rest } = Props
     
 
 const calculateSizeWeidth = () => {
@@ -50,13 +52,7 @@ const CalculateSizePaddingLef = () => {
     
     return (
         <Fragment>
-            {title&&<Text style={style.titleInput}>{title}</Text>}
             <View style={[style.BoxInput,{paddingLeft: CalculateSizePaddingLef()}]}>
-                {IconLeft && iconLeftName &&(
-                <TouchableOpacity onPress={onIconLeftPress} style={style.button}>
-                    <IconLeft name={iconLeftName as any} size={20} color={'gray'} style={style.Icon}/>
-                </TouchableOpacity>
-                )}
                 <TextInput
                     style={[
                         style.input,{width: calculateSizeWeidth()}

@@ -33,7 +33,7 @@ export const style = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         marginTop: -40,
-        marginStart: 120
+        marginStart: 130
     },
 
 

@@ -6,15 +6,15 @@ export const style = StyleSheet.create({
     BoxInput: {
         width: '100%',
         height: 50,
-        borderWidth: 1,
-        borderRadius: 40,
-        marginTop: 1,
+        borderWidth: 3,
+        borderRadius: 30,
+        marginTop: 630,
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 12,
         backgroundColor: 'black',
         borderColor: 'white',
-        justifyContent: 'space-between',
+        
     },
 
     input: {
@@ -37,7 +37,7 @@ export const style = StyleSheet.create({
     },
 
     button:{
-        width: '10%'
+        width: '10%',
     },
 
 });

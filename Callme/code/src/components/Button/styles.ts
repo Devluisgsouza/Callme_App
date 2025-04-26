@@ -1,5 +1,5 @@
 import {  StyleSheet } from "react-native";
-import { ButtonMenu } from ".";
+import { ButtonBack, ButtonMenu } from ".";
 
 
 
@@ -90,18 +90,10 @@ export const style = StyleSheet.create({
         height: 50,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'lightgray',
+        backgroundColor: 'black',
         borderRadius: 40,
         borderWidth: 2,
-        borderColor: 'gray',
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 3,
-        },
-        shadowOpacity: 0.29,
-        shadowRadius: 4.65,
-        elevation: 7,
+        borderColor: 'white',
         marginTop: 5,
         marginLeft: -100,
         
@@ -109,7 +101,7 @@ export const style = StyleSheet.create({
 
     Icon: {
         fontSize: 30,
-        color: 'gray',
+        color: 'white',
     },
 
     ButtonQuest: {
@@ -129,5 +121,25 @@ export const style = StyleSheet.create({
         fontSize: 13,
         color: 'black',
         marginTop: -3,
+    },
+
+    ButtonBack: {
+        width: 40,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'black',
+        borderRadius: 40,
+        borderWidth: 2,
+        borderColor: 'white',
+        marginTop: 30,
+        marginLeft: 10,
+
+        
+    },
+
+    Icon3: {
+        fontSize: 30,
+        color: 'white',
     },
 })

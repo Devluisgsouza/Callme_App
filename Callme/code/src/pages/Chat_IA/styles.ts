@@ -8,60 +8,33 @@ export const style = StyleSheet.create({
     },
     
     boxTop: {
-        height: Dimensions.get('window').height/9,
+        height: Dimensions.get('window').height/8,
         width: '100%',
-        alignItems: 'center',
         backgroundColor: "black",
-        justifyContent: 'center',
+   
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1,
+        height: Dimensions.get('window').height/1.149,
         width: '100%',
         alignItems: 'center',
-        backgroundColor: "white",
+        backgroundColor: "black",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
+        borderEndEndRadius: 30,
+        borderStartEndRadius: 30,
+        borderColor: 'white',
+        borderWidth: 3,
     },
+
 
     Textinicial: {
         fontSize: 30,
         fontWeight: 'bold',
         color: 'white',
-        marginTop: 10,
+        marginTop: -40,
+        marginStart: 120
     },
 
-    inputArea: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        borderTopWidth: 1,
-        borderColor: '#ccc',
-        paddingHorizontal: 10,
-        paddingVertical: 8,
-      },
-      
-      input: {
-        flex: 1,
-        borderWidth: 1,
-        borderColor: '#ccc',
-        borderRadius: 10,
-        paddingHorizontal: 10,
-        height: 40,
-        backgroundColor: '#fff',
-      },
-      
-      botaoEnviar: {
-        backgroundColor: '#007AFF',
-        paddingHorizontal: 12,
-        paddingVertical: 8,
-        borderRadius: 10,
-        marginLeft: 8,
-      },
-      
-      textoBotao: {
-        color: 'white',
-        fontWeight: 'bold',
-      },
-      
 
 })

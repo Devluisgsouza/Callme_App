@@ -104,4 +104,17 @@ export function ButtonQuest({...rest}:Props) {
 }
 
 
+export function ButtonBack({...rest}:Props) {
+
+    return(
+        <TouchableOpacity 
+            style={style.ButtonBack}
+            {...rest}
+            activeOpacity={0.6}
+        >
+            {<MaterialIcons style={style.Icon3}>{rest.iconName}</MaterialIcons> }
+        </TouchableOpacity>
+    )
+}
+
 

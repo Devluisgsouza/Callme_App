@@ -22,15 +22,15 @@ export default function BottomTecnicoRoutes(){
                 component={Menu_Tecnico}
                 />
             <tab.Screen 
-                name="Chamados_tecnico" 
+                name="chamados_tecnico" 
                 component={Visualizar_chamados_tecnico}
                 />
             <tab.Screen 
-                name="Atender_chamado" 
+                name="atender_chamado"
                 component={Atender_chamados}
                 />
             <tab.Screen 
-                name="Perfil" 
+                name="perfil" 
                 component={Perfil}
                 />    
         </tab.Navigator>

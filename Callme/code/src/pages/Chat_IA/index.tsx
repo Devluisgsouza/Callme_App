@@ -1,10 +1,9 @@
-import React from 'react';
-import { View, Text } from "react-native";
-import { style } from './styles';
-
+import React, { useState } from 'react';
+import { View, Text } from 'react-native';import { style } from './styles';
 
 
 export default function Chat_IA (){
+
 
 return(
         <View style={style.container}>

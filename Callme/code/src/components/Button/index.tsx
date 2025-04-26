@@ -90,5 +90,18 @@ export function ButtonChat({...rest}:Props) {
 }
 
 
+export function ButtonQuest({...rest}:Props) {
+
+    return(
+        <TouchableOpacity 
+            style={style.ButtonQuest}
+            {...rest}
+            activeOpacity={0.6}
+        >
+            {<MaterialIcons style={style.Icon2}>{rest.iconName}</MaterialIcons> }
+        </TouchableOpacity>
+    )
+}
+
 
 

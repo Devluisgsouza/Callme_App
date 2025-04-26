@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
 import Menu from "../pages/menu";
 import Perfil from "../pages/perfil";
-import Chamados from "../pages/chamados";
+import Visualizar_chamados from "../pages/chamados";
 import Criar_chamado from "../pages/Criar_chamado";
 import CustomTabBar from "../components/CustomTabBar";
 
@@ -26,11 +26,11 @@ export default function BottomRoutes(){
                 component={Criar_chamado}
                 />
             <tab.Screen 
-                name="Chamados" 
-                component={Chamados}
+                name="chamados"
+                component={Visualizar_chamados}
                 />
             <tab.Screen 
-                name="Perfil" 
+                name="perfil"
                 component={Perfil}
                 />
             

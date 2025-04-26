@@ -31,4 +31,37 @@ export const style = StyleSheet.create({
         marginTop: 10,
     },
 
+    inputArea: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderTopWidth: 1,
+        borderColor: '#ccc',
+        paddingHorizontal: 10,
+        paddingVertical: 8,
+      },
+      
+      input: {
+        flex: 1,
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 10,
+        paddingHorizontal: 10,
+        height: 40,
+        backgroundColor: '#fff',
+      },
+      
+      botaoEnviar: {
+        backgroundColor: '#007AFF',
+        paddingHorizontal: 12,
+        paddingVertical: 8,
+        borderRadius: 10,
+        marginLeft: 8,
+      },
+      
+      textoBotao: {
+        color: 'white',
+        fontWeight: 'bold',
+      },
+      
+
 })

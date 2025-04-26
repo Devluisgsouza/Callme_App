@@ -23,11 +23,18 @@ export default function Visualizar_chamados(){
                 <Text style={style.Textinicial}>CHAMADOS</Text>  
             </View>
 
+            <View style={style.boxChat}>
+                <View style={{ flexDirection: 'row'}}>
+                    <Text style={style.TextChat}>CHAT COM IA</Text>
+                    <ButtonChat 
+                    icon={MaterialIcons} 
+                    iconName="chat" 
+                    onPress={() => getChat()}/>
+                </View>
+            </View>
+
             <View style={style.boxMid}>
-                <ButtonChat 
-                icon={MaterialIcons} 
-                iconName="chat" 
-                onPress={() => getChat()}/>
+                
             </View>
 
       </View>

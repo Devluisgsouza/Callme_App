@@ -25,7 +25,7 @@ export default ({ state, navigation }: BottomTabBarProps) => {
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Chamados_tecnico')}>
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('chamados_tecnico')}>
                 <MaterialIcons
                     name="storage"
                     style={{opacity:state.index === 1?1:0.3,fontSize:32,color:'white'}}
@@ -34,7 +34,7 @@ export default ({ state, navigation }: BottomTabBarProps) => {
                     Chamados</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Atender_chamado')}>
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('atender_chamado')}>
                 <MaterialIcons
                     name="add-box"
                     style={{opacity:state.index === 2?1:0.3,fontSize:32,color:'white'}}
@@ -44,7 +44,7 @@ export default ({ state, navigation }: BottomTabBarProps) => {
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Perfil')}>
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('perfil')}>
                 <MaterialIcons
                     name="person"
                     style={{opacity:state.index === 3?1:0.3,fontSize:32,color:'white'}}

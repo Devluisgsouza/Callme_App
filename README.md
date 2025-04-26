@@ -32,6 +32,10 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 
 ## 🆙 Como Contribuir
 
+- Instale o [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwtdi_BhACEiwA97y8BK-tY4oR5cK3W_CzLqqa771C1-3OcUvI-uAFNPAHbnRxR6vZxkYKlxoC7z0QAvD_BwE&hl=pt-br)
+
+- Instale o [Node.js](https://nodejs.org/pt)
+
 ```bash
     # Clone o projeto
     $ git clone https://github.com/Devluisgsouza/Callme_App.git 
@@ -41,10 +45,6 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
     # Entre na pasta do código
     $ cd Callme/code
 ```
-
-- Instale o [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwtdi_BhACEiwA97y8BK-tY4oR5cK3W_CzLqqa771C1-3OcUvI-uAFNPAHbnRxR6vZxkYKlxoC7z0QAvD_BwE&hl=pt-br)
-
-- Instale o [Node.js](https://nodejs.org/pt)
 
 ```bash
     # Instale a dependência

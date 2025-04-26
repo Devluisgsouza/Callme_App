@@ -4,10 +4,9 @@ import { style } from './styles';
 import SelectMultiple from "../../components/SelectBox";
 import { InputBig } from "../../components/inputBig";
 import MeuDropdown from "../../components/ListBox";
-import { Button } from "../../components/Button";
+import { Button, ButtonChat, ButtonQuest } from "../../components/Button";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
-
-
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 export default function Criar_chamado() {
@@ -53,13 +52,16 @@ export default function Criar_chamado() {
 
         setTimeout(() => {
           setLoading(false);
-          Alert.alert('Chamado enviado com sucesso!');
-          navigation.reset({ routes: [{ name: "BottomRoutes" }] })
+          navigation.navigate("Chat_IA")
         }, 1000);
       } catch (error) {
           console.log(error);
           setLoading(false);
     }
+  }
+
+  async function getChat() {
+    Alert.alert('DÚVIDAS?','PRIORIDADES: ALTA - quando afeta totalmente o seu serviço / MÉDIA - quando afeta grande parte do seu serviço. / BAIXA - quando afeta uma pequena parte do seu serviço.');
   }
 
   return (
@@ -69,10 +71,16 @@ export default function Criar_chamado() {
       </View>
 
       <View style={style.boxMid}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
         <Text style={style.label}>
           SELECIONE A PRIORIDADE DO CHAMADO:
           {prioridadeError && <Text style={{ color: 'red' }}> *</Text>}
           </Text>
+          <ButtonQuest 
+            icon={MaterialIcons} 
+            iconName="?" 
+            onPress={() => getChat()}/>
+          </View>
         <SelectMultiple
           options={['BAIXA', 'MÉDIA', 'ALTA']}
           selectedValue={prioridade}

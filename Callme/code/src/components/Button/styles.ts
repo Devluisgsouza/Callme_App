@@ -102,15 +102,32 @@ export const style = StyleSheet.create({
         shadowOpacity: 0.29,
         shadowRadius: 4.65,
         elevation: 7,
-
-        marginTop: 15,
-        marginLeft: 330,
+        marginTop: 5,
+        marginLeft: -100,
         
     },
 
     Icon: {
         fontSize: 30,
         color: 'gray',
-    }
+    },
 
+    ButtonQuest: {
+        width: 15,
+        height: 15,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'lightgray',
+        borderRadius: 40,
+        borderWidth: 1,
+        borderColor: 'black',
+        marginTop: 65,
+        marginLeft: 10,   
+    },
+
+    Icon2: {
+        fontSize: 13,
+        color: 'black',
+        marginTop: -3,
+    },
 })

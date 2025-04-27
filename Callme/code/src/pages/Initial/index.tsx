@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Text,View,Image } from "react-native";
 import { style } from "./styles";
-import Logo from '../../assets/logo1.png';
+import Logo from '../../assets/logoCallmeapp.png';
 import { Button, ButtonText } from "../../components/Button";
 
 
@@ -18,8 +18,9 @@ export default function Inicial() {
             <View style={style.Box}>
                 <Image
                     source={Logo}
-                    style={{width: 200, height: 200}}
+                    style={style.logo}
                     resizeMode="contain"   
+                    
                 />
                 <Text style={style.Title}>Ola</Text>
             </View> 

@@ -22,5 +22,11 @@ export const style = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
         marginTop: 20,
-    }
+    },
+
+    logo: {
+        width: 170,
+        height: 170,
+        marginTop: 20
+    },
 })

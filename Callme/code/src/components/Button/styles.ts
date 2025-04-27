@@ -13,7 +13,6 @@ export const style = StyleSheet.create({
         borderRadius: 40,
         borderColor: 'white',
         borderWidth: 2,
-        marginTop: 80,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
@@ -34,7 +33,7 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 40,
-        marginTop: 90,
+        marginTop: 60,
     },
 
     Buttontextsenha: {
@@ -81,7 +80,7 @@ export const style = StyleSheet.create({
         height: 22,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 60,
+        marginTop: 40,
         textDecorationLine: 'underline',
         borderRadius: 50
     },

@@ -14,6 +14,7 @@ type Props = TouchableHighlightProps & {
     boderColor?:string,
     boderWidth?:number,
     boderRadius?:number,
+    marginTop?:number,
 }
 
 
@@ -24,7 +25,7 @@ export function Button({...rest}:Props) {
             {...rest}
             activeOpacity={0.6}
         >
-            {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton}>{rest.text}</Text> }
+            {rest.Loading?<ActivityIndicator/>:<Text style={style.TextButton}>{rest.text}</Text> }
         </TouchableOpacity>
     )
 }

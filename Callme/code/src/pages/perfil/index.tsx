@@ -42,36 +42,37 @@ export default function Perfil(){
                     style={style.logo}
                     resizeMode="contain"
                 />
-                <View style={style.infoContainer}>
-                    <Text style={style.infoTitle}>NOME</Text>
-                    <View style={style.boxInfo}>
-                        <Text style={style.infoText}>LUIS GUILHERME DE SOUZA</Text>
+                <View style={{marginTop: 50}}>
+                    <View style={style.infoContainer}>
+                        <Text style={style.infoTitle}>NOME</Text>
+                        <View style={style.boxInfo}>
+                            <Text style={style.infoText}>LUIS GUILHERME DE SOUZA</Text>
+                        </View>
                     </View>
-                </View>
 
-                <View style={style.infoContainer}>
-                    <Text style={style.infoTitle}>RE (REGISTRO EMPRESARIAL)</Text>
-                    <View style={style.boxInfo}>
-                        <Text style={style.infoText}>G01DJI5</Text>
+                    <View style={style.infoContainer}>
+                        <Text style={style.infoTitle}>RE (REGISTRO EMPRESARIAL)</Text>
+                        <View style={style.boxInfo}>
+                            <Text style={style.infoText}>G01DJI5</Text>
+                        </View>
                     </View>
-                </View>
 
-                <View style={style.infoContainer}>
-                    <Text style={style.infoTitle}>EMAIL</Text>
-                    <View style={style.boxInfo}>
-                        <Text style={style.infoText}>devlgsouza@gmail.com</Text>
+                    <View style={style.infoContainer}>
+                        <Text style={style.infoTitle}>EMAIL</Text>
+                        <View style={style.boxInfo}>
+                            <Text style={style.infoText}>devlgsouza@gmail.com</Text>
+                        </View>
                     </View>
-                </View>
 
-                <View style={style.infoContainer}>
-                    <Text style={style.infoTitle}>FUNÇÃO</Text>
-                    <View style={style.boxInfo}>
-                        <Text style={style.infoText}>
-                            {userType || userType2 || 'NÃO DEFINIDO'}
-                        </Text>
+                    <View style={style.infoContainer}>
+                        <Text style={style.infoTitle}>FUNÇÃO</Text>
+                        <View style={style.boxInfo}>
+                            <Text style={style.infoText}>
+                                {userType || userType2 || 'NÃO DEFINIDO'}
+                            </Text>
+                        </View>
                     </View>
                 </View>
-                
                 <ButtonTextalterar text="Alterar dados da conta" onPress={() => getalterar()} />
             </View>
         </View>

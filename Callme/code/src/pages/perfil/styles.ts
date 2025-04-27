@@ -18,12 +18,13 @@ export const style = StyleSheet.create({
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1,
+        height: Dimensions.get('window').height/1.23,
         width: '100%',
         alignItems: 'center',
-        backgroundColor: "white",
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
+        backgroundColor: "black",
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: 'white',
         paddingHorizontal: 40,
     },
 
@@ -37,8 +38,11 @@ export const style = StyleSheet.create({
 
     logo: {
         width: 70,
-        height: 170,
-        marginTop: -30
+        height: 70,
+        marginTop: 40,
+        borderRadius: 100,
+        borderColor: 'white',
+        borderWidth: 2,
     },
     
     boxInfo: {
@@ -52,7 +56,7 @@ export const style = StyleSheet.create({
 
     infoText: {
         fontSize: 15,
-        marginLeft:10
+        marginLeft:10,
     },   
     
     infoContainer: {
@@ -64,6 +68,7 @@ export const style = StyleSheet.create({
         fontSize: 15,
         marginBottom: 15,
         marginLeft: 5,
-        fontWeight: '600'
+        fontWeight: '600',
+        color: 'white',
     },
 })

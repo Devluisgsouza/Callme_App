@@ -15,14 +15,14 @@ export const style = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "white"
+        backgroundColor: "black"
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1.5,
+        height: Dimensions.get('window').height/1.41,
         width: '100%',
         paddingHorizontal: 30,
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         marginTop: -30
     },
 
@@ -30,30 +30,26 @@ export const style = StyleSheet.create({
     Textinicial: {
         fontSize: 30,
         fontWeight: 'bold',
-        color: 'black',
-        marginTop: 0,
-    },
-
-    logo: {
-        width: 70,
-        height: 170,
-        marginTop: 60,
-        marginStart: -30,
+        color: 'white',
     },
 
     logo2: {
-        width: 200,
+        width: 100,
         height: 100,
         marginTop: 20,
+        borderColor: 'white',
+        borderWidth: 2,
+        borderRadius: 300,
     },
 
     TextCaixa: {
         fontSize: 15,
         fontWeight: 'bold',
+        color: 'white',
 
     },
     
     Botton: {
-        marginTop:-120
+        marginTop:-75
     }
 })

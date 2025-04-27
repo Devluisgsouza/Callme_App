@@ -22,10 +22,10 @@ export default function SelectMultiple({
           style={{
             padding: 12,
             marginVertical: 5,
-            borderWidth: 1,
+            borderWidth: 2,
             borderRadius: 8,
-            borderColor: selectedValue === option ? "black" : "light_gray",
-            backgroundColor: selectedValue === option ? "gray" : "white",
+            borderColor: selectedValue === option ? "black" : "lightgray",
+            backgroundColor: selectedValue === option ? "white" : "gray",
           }}
         >
           <Text

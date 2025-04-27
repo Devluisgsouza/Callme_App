@@ -39,9 +39,11 @@ export default function Inicial() {
                 />
 
                 <Text style={style.Title}>CALLME APP</Text>
-                <Text style={style.SubTitle}>A SOLUÇÃO PARA OS SEUS PROBLEMA TÉCNICO</Text>
-                <Button text="ENTRAR" onPress={() => getEntrar()} />
-                <View style={{marginTop: -60}}>
+                <Text style={style.SubTitle}>A SOLUÇÃO PARA OS SEUS PROBLEMAS TÉCNICO</Text>
+                <View style={{marginTop: 80}}>
+                    <Button text="ENTRAR" onPress={() => getEntrar()} />
+                </View>
+                <View style={{marginTop: -20}}>
                     <ButtonText text="CRIAR CONTA" onPress={() => getcriar()} />            
                 </View>
             </View> 

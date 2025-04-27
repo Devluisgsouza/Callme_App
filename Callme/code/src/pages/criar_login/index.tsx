@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import { Text, View, Image, Alert } from 'react-native';
 import { style } from './styles';
-import Logo from '../../assets/logoCallmeapp.png';
-import Logo2 from '../../assets/Perfil.png';
+import Logo2 from '../../assets/Conta.png';
 import { Input } from "../../components/input";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import {MaterialIcons, Octicons} from '@expo/vector-icons';

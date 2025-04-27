@@ -20,8 +20,8 @@ export const CheckBox: React.FC<Props> = ({ value, onChange }) => {
             width: 20,
             borderRadius: 10,
             borderWidth: 1,
-            borderColor: '#000',
-            backgroundColor: value === 'tecnico' ? '#000' : '#fff',
+            borderColor: 'white',
+            backgroundColor: value === 'tecnico' ? 'white' : 'black',
             marginRight: 5,
           }}
         />
@@ -38,8 +38,8 @@ export const CheckBox: React.FC<Props> = ({ value, onChange }) => {
             width: 20,
             borderRadius: 10,
             borderWidth: 1,
-            borderColor: '#000',
-            backgroundColor: value === 'funcionario' ? '#000' : '#fff',
+            borderColor: 'white',
+            backgroundColor: value === 'funcionario' ? 'white' : 'black',
             marginRight: 5,
 
           }}

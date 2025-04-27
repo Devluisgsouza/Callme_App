@@ -5,10 +5,7 @@ import {  StyleSheet } from "react-native";
 export const style = StyleSheet.create({
     
     container: {
-        alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: "black",
-        
     },
 
     tabArea:{
@@ -21,7 +18,7 @@ export const style = StyleSheet.create({
         borderEndColor: 'white',
         borderStartColor: 'white',
         borderTopColor: 'white',
-        borderWidth: 2,      
+        borderWidth: 2,   
     },
 
     tabItem:{

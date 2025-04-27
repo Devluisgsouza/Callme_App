@@ -113,7 +113,7 @@ export default function Criar_chamado() {
             if (value && value !== 'Selecione') setTipoError(false);
           }}
         />
-        <View style={{marginTop: -10}}>
+        <View style={{marginTop: 60}}>
           <Button text="ENVIAR CHAMADO" Loading={loading} onPress={() => getChamado()} />
         </View>
       </View>

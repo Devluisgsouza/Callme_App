@@ -31,11 +31,12 @@ export const style = StyleSheet.create({
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1,
+        height: Dimensions.get('window').height/1.394,
         width: '100%',
-        backgroundColor: "white",
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
+        backgroundColor: "black",
+        borderRadius: 30,
+        borderColor: 'white',
+        borderWidth: 2,
         marginTop: 10,
     },
 
@@ -69,7 +70,7 @@ export const style = StyleSheet.create({
         height: 100,
         fontWeight: 'bold',
         fontSize: 24,
-        color: 'black',
+        color: 'white',
         marginStart: 20,
         marginTop: 15,
     }

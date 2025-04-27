@@ -6,43 +6,48 @@ export const style = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'black',
     },
     
     boxTop: {
-        height: Dimensions.get('window').height/3,
+        height: Dimensions.get('window').height/2,
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: 'black',
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/3,
+        height: Dimensions.get('window').height/2,
         width: '100%',
         paddingHorizontal: 40,
+        backgroundColor: 'black',
 
 
     },
 
     boxButtom: {
-        height: Dimensions.get('window').height/3,
+        height: Dimensions.get('window').height/4,
         width: '100%',
         alignItems: 'center',
-        marginTop: 10
-
+        backgroundColor: 'black',
     },
 
     logo: {
         width: 170,
         height: 170,
-        marginTop: 20
+        marginTop: 100,
+        borderColor: 'white',
+        borderWidth: 2,
+        borderRadius: 100,
     },
 
     text: {
         fontWeight: 'bold',
         marginTop: 10,
         fontSize: 30,
-        color: 'black'
+        color: 'white'
     },
 
     Button: {
@@ -68,7 +73,7 @@ export const style = StyleSheet.create({
     },
 
     TextFinal: {
-        marginTop: 90,
+        marginTop: 60,
         fontSize: 15,
         fontWeight: 'bold',
         color: 'gray'
@@ -94,5 +99,6 @@ export const style = StyleSheet.create({
         fontWeight: '500',
         marginTop: 20,
         textAlign: 'center',
+        color: 'white'
     }
 })

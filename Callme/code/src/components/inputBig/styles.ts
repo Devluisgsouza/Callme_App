@@ -15,7 +15,6 @@ export const style = StyleSheet.create({
         backgroundColor: 'lightgray',
         borderColor: 'gray',
         justifyContent: 'space-between',
-        
     },
 
     input: {

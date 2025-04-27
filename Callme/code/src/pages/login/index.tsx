@@ -123,7 +123,7 @@ export default function Login (){
                         if (text) setEmailError(false);
                     }}
                     title={
-                        <Text>
+                        <Text style={{ color: 'white' }}>
                             ENDEREÇO DE EMAIL
                             {emailError && <Text style={{ color: 'red' }}> *</Text>}
                         </Text>
@@ -138,7 +138,7 @@ export default function Login (){
                         if (text) setPasswordError(false);
                     }}
                     title={
-                        <Text>
+                        <Text style={{ color: 'white' }}>
                             SENHA
                             {passwordError && <Text style={{ color: 'red' }}> *</Text>}
                         </Text>
@@ -149,9 +149,11 @@ export default function Login (){
                     onIconRightPress={() => setShowPassword(!showPassword)}
                 />
                 <ButtonTextsenha text="Esqueci minha senha" onPress={()=> getsenha()} />
+                <View style={{marginTop: 21, marginStart: 30}}>
+                    <Button text="ENTRAR" Loading={loading} onPress={() => getLogin()} />
+                </View>
             </View>
-            <View style={style.boxButtom}>
-                <Button text="ENTRAR" Loading={loading} onPress={() => getLogin()} />
+            <View style={style.boxButtom}> 
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', width: '50%' }}>
                     <Text style={style.TextFinal}>Não tem conta?</Text>
                     <ButtonText text="Crie agora!"  onPress={() => getcriar()} />

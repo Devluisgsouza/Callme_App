@@ -17,12 +17,13 @@ export const style = StyleSheet.create({
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1,
+        height: Dimensions.get('window').height/1.23,
         width: '100%',
         alignItems: 'center',
-        backgroundColor: "white",
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
+        backgroundColor: "black",
+        borderWidth: 2,
+        borderColor: 'white',
+        borderRadius: 30,
     },
 
     Textinicial: {
@@ -37,17 +38,20 @@ export const style = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 5,
         marginTop: 70,
+        color: 'white',
       },
 
     TitleBox: {
         fontSize: 16,
         fontWeight: 'bold',
         marginBottom: 5,
+        color: 'white',
     },
 
     TitleList: {
         fontSize: 16,
         fontWeight: 'bold',
         marginTop: 40,
+        color: 'white',
     }
 })

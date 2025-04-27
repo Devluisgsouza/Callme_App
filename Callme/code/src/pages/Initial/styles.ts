@@ -26,7 +26,7 @@ export const style = StyleSheet.create({
     logo: {
         width: 250,
         height: 250,
-        marginTop: -90,
+        marginTop: -20,
         borderColor: 'white',
         borderWidth: 2,
         borderRadius: 300,
@@ -36,6 +36,6 @@ export const style = StyleSheet.create({
         fontSize: 15,
         color: 'white',
         fontWeight: 'bold',
-        marginTop: 20,
+        marginTop: 30,
     },
 })

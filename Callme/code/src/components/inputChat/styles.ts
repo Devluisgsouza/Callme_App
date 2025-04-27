@@ -24,21 +24,11 @@ export const style = StyleSheet.create({
         color: 'white',
     },
 
-    titleInput: {
-        marginLeft: 5,
-        fontSize: 15,
-        marginTop: 30,
-        
-    },
 
     Icon:{
-        width: '50%',
-        backgroundColor: 'black',
-        
-    },
-
-    button:{
-        width: '10%',
+        height: 25,
+        width: 25,
+        borderRadius: 30, 
     },
 
 });

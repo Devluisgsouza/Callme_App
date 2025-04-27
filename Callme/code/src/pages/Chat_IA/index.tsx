@@ -76,12 +76,12 @@ export default function Chat_IA() {
                         style={style.logo}
                         resizeMode="contain"     
                         />
-                    <View key={index} style={style.IABox}>
+                    <View style={style.IABox}>
                         <Text style={{ 
                             color: 'black',
                             fontSize: 15, 
                             fontWeight: 'bold' }}>
-                            Ola, sou a IA da Callme, no memonto não poderei te ajudar, pois estou em desenvolvimento!
+                            Ola, sou a IA da Callme, no memonto não posso te ajudar, pois estou em desenvolvimento!
                         </Text>
                     </View>
                 </View>

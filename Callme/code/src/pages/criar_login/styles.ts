@@ -4,10 +4,7 @@ import { Dimensions, StyleSheet } from "react-native";
 
 export const style = StyleSheet.create({
     container: {
-        flex: 1,
-        alignItems: 'center',
-
-        
+        flex: 1,    
     },
     
     boxTop: {
@@ -50,6 +47,7 @@ export const style = StyleSheet.create({
     },
     
     Botton: {
-        marginTop:-75
+        marginTop: -75,
+        alignSelf: 'center'
     }
 })

@@ -20,10 +20,7 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/12,
         width: '100%',
         backgroundColor: "black",
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
-        borderEndEndRadius: 30,
-        borderStartEndRadius: 30,
+        borderRadius: 30,
         borderColor: 'white',
         borderWidth: 2,
         alignItems: 'center',
@@ -34,9 +31,6 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/1.394,
         width: '100%',
         backgroundColor: "black",
-        borderRadius: 30,
-        borderColor: 'white',
-        borderWidth: 2,
         marginTop: 10,
     },
 
@@ -66,12 +60,44 @@ export const style = StyleSheet.create({
     },
 
     TextMid: {
-        width: '100%',
-        height: 100,
+        width: 'auto',
+        height: 'auto',
         fontWeight: 'bold',
         fontSize: 24,
         color: 'white',
-        marginStart: 20,
         marginTop: 15,
-    }
+        paddingStart: 20,
+        paddingEnd: 20,
+        backgroundColor: 'black',
+        borderColor: 'white',
+        borderWidth: 2,
+        borderRadius: 30,
+        alignSelf: 'center'
+    },
+
+    box1: {
+        height: Dimensions.get('window').height/3,
+        backgroundColor: 'black',
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: 'white',
+    },
+
+    box2: {
+        height: Dimensions.get('window').height/3,
+        backgroundColor: 'black',
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: 'white',
+        marginTop: 10,
+    },
+
+    box3: {
+        height: Dimensions.get('window').height/3,
+        backgroundColor: 'black',
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: 'white',
+        marginTop: 10,
+    },
 })

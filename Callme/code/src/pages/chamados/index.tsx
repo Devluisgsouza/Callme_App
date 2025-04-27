@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, View, Image } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { style } from './styles';
-import { ButtonBack, ButtonChat } from '../../components/Button';
+import { ButtonChat } from '../../components/Button';
 import {MaterialIcons} from '@expo/vector-icons';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 
@@ -39,11 +39,15 @@ export default function Visualizar_chamados(){
             </View>
 
             <View style={style.boxMid}>
-                <Text style={style.TextMid}>Chamados finalizados</Text>
-
-                <Text style={style.TextMid}>Chamados aguardando</Text>
-
-                <Text style={style.TextMid}>Chamados em andamento</Text>
+                <ScrollView style={style.box1}>
+                    <Text style={style.TextMid}>FINALIZADOS</Text>
+                </ScrollView>
+                <ScrollView style={style.box2}>
+                    <Text style={style.TextMid}>EM ANDAMENTO</Text>
+                </ScrollView>
+                <ScrollView style={style.box3}>
+                    <Text style={style.TextMid}>EM ESPERA</Text>
+                </ScrollView>
             </View>
 
       </View>

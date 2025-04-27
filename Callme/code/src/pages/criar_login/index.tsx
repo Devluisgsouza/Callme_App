@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Text, View, Image, Alert } from 'react-native';
+import { Text, View, Image, Alert, ScrollView } from 'react-native';
 import { style } from './styles';
 import Logo2 from '../../assets/Conta.png';
 import { Input } from "../../components/input";
@@ -107,7 +107,7 @@ export default function Criar_Login(){
 
 
     return(
-        <View style={style.container}>
+        <ScrollView style={style.container}>
             <View style={style.boxTop}>
                 <View style={{ alignItems: 'center', marginTop: 30 }}>
                     <Text style={style.Textinicial}>CRIE SUA CONTA</Text>
@@ -121,7 +121,7 @@ export default function Criar_Login(){
                 </View>
             </View>
 
-            <View style={style.boxMid}>
+            <View  style={style.boxMid}>
                 <CheckBox value={userType2} onChange={handleUserTypeChange2} />
                 <Input
                 value={nome}
@@ -181,11 +181,10 @@ export default function Criar_Login(){
                     secureTextEntry={showPassword}
                     onIconRightPress={() => setShowPassword(!showPassword)}
                 />
-            </View>
-            <View style={style.Botton}>
-                <Button text="CRIAR CONTA" Loading={loading} onPress={() => getCriarLogin()} />
-            </View>
-      </View>  
+                </View >
+                <View style={style.Botton}>
+                    <Button text="CRIAR CONTA" Loading={loading} onPress={() => getCriarLogin()} />
+                </View>
+        </ScrollView >  
     )
 }
-

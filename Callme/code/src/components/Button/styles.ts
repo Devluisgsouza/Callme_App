@@ -30,14 +30,11 @@ export const style = StyleSheet.create({
     },
 
     Buttontext: {
-        width: 90,
         height: 20,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'white',
         borderRadius: 40,
         marginTop: 90,
-        
     },
 
     Buttontextsenha: {
@@ -66,6 +63,8 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: 'black',
         borderRadius: 15,
+        borderColor: 'white',
+        borderWidth: 2,
         marginLeft:18,
         marginTop: 10,
         shadowOffset: {

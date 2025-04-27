@@ -13,6 +13,7 @@ export const style = StyleSheet.create({
         height: Dimensions.get('window').height/9,
         width: '100%',
         backgroundColor: "black",
+        alignItems: 'center',
     },
 
     boxChat: {
@@ -42,8 +43,7 @@ export const style = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: 'white',
-        marginStart: 120,
-        marginTop: -40,
+        marginTop: 30,
     },
 
     logo: {

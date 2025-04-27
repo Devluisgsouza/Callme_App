@@ -1,5 +1,5 @@
 <h1 align='center'>
-    <img src='./Callme/code/src/assets/logo1.png'>
+    <img src='./Callme/code/src/assets/logoCallmeapp.png'>
     <p>The future of service
 </h1>
 

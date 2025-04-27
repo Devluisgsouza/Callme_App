@@ -26,14 +26,8 @@ export default function Visualizar_chamados(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                {/* <View style={{ flexDirection: 'row', alignItems: 'center'}}> */}
-                <ButtonBack 
-                    icon={MaterialIcons} 
-                    iconName="arrow_back" 
-                    onPress={() => getBack()}/>
                 <Text style={style.Textinicial}>CHAMADOS</Text>  
-            {/* </View> */}
-        </View>
+            </View>
             <View style={style.boxChat}>
                 <View style={{ flexDirection: 'row'}}>
                     <Text style={style.TextChat}>FALE COM A IA DA CALLME</Text>

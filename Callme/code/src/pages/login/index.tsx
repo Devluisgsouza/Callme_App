@@ -152,9 +152,9 @@ export default function Login (){
             </View>
             <View style={style.boxButtom}>
                 <Button text="ENTRAR" Loading={loading} onPress={() => getLogin()} />
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', width: '50%' }}>
                     <Text style={style.TextFinal}>Não tem conta?</Text>
-                    <ButtonText text=" Crie agora!" onPress={() => getcriar()} />
+                    <ButtonText text="Crie agora!"  onPress={() => getcriar()} />
                 </View>
             </View>
         </View>

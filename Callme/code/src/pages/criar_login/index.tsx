@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Text, View, Image, Alert } from 'react-native';
 import { style } from './styles';
-import Logo from '../../assets/logo1.png';
+import Logo from '../../assets/logoCallmeapp.png';
 import Logo2 from '../../assets/Perfil.png';
 import { Input } from "../../components/input";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
@@ -110,14 +110,9 @@ export default function Criar_Login(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                    <Image
-                        source={Logo}
-                        style={style.logo}
-                        resizeMode="contain"
-                        />
+                <View style={{ alignItems: 'center', marginTop: 30 }}>
                     <Text style={style.Textinicial}>CRIE SUA CONTA</Text>
-                    </View>
+                </View>
                 <View>
                 <Image
                         source={Logo2}

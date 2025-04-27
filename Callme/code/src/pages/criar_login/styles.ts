@@ -31,21 +31,20 @@ export const style = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: 'black',
-        marginTop: -40,
-        marginStart: 20
+        marginTop: 0,
     },
 
     logo: {
         width: 70,
         height: 170,
-        marginTop: -40,
+        marginTop: 60,
         marginStart: -30,
     },
 
     logo2: {
         width: 200,
         height: 100,
-        marginTop: -40,
+        marginTop: 20,
     },
 
     TextCaixa: {

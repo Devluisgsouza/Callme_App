@@ -13,7 +13,6 @@ export const style = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20,
         backgroundColor: 'black',
     },
 
@@ -25,8 +24,18 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 170,
-        height: 170,
-        marginTop: 20
+        width: 250,
+        height: 250,
+        marginTop: -90,
+        borderColor: 'white',
+        borderWidth: 2,
+        borderRadius: 300,
+    },
+
+    SubTitle: {
+        fontSize: 15,
+        color: 'white',
+        fontWeight: 'bold',
+        marginTop: 20,
     },
 })

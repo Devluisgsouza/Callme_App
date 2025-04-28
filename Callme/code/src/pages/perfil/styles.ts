@@ -47,8 +47,10 @@ export const style = StyleSheet.create({
     
     boxInfo: {
         marginTop: -10,
-        backgroundColor: 'lightgray',
+        backgroundColor: 'white',
         borderRadius: 30,
+        borderWidth: 3,
+        borderColor: 'gray',
         width: 320,
         height: 40,
         justifyContent: 'center',
@@ -57,6 +59,7 @@ export const style = StyleSheet.create({
     infoText: {
         fontSize: 15,
         marginLeft:10,
+        fontWeight: 'bold'
     },   
     
     infoContainer: {

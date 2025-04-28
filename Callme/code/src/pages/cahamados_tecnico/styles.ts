@@ -18,12 +18,14 @@ export const style = StyleSheet.create({
     },
 
     boxMid: {
-        height: Dimensions.get('window').height/1,
+        height: Dimensions.get('window').height/1.23,
         width: '100%',
         alignItems: 'center',
-        backgroundColor: "white",
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
+        backgroundColor: "black",
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: 'white',
+        paddingHorizontal: 40,
     },
 
     Textinicial: {

@@ -76,7 +76,7 @@ export default function Chat_IA() {
                         style={style.logo}
                         resizeMode="contain"     
                         />
-                    <View style={style.IABox}>
+                    <View key={index} style={style.IABox}>
                         <Text style={{ 
                             color: 'black',
                             fontSize: 15, 

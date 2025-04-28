@@ -61,18 +61,11 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: 'black',
-        borderRadius: 15,
+        borderRadius: 20,
         borderColor: 'white',
-        borderWidth: 2,
+        borderWidth: 4,
         marginLeft:18,
         marginTop: 10,
-        shadowOffset: {
-            width: 0,
-            height: 12,
-        },
-        shadowRadius:40.00,
-        elevation:9,
-        shadowColor: 'black',
     },
 
     Buttontextalterar: {

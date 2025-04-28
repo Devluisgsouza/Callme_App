@@ -3,6 +3,11 @@ import {  StyleSheet } from "react-native";
 
 
 export const style = StyleSheet.create({
+
+    container: {
+        backgroundColor: "black",
+    },
+
     tabArea:{
         flexDirection: "row",
         backgroundColor: "black",
@@ -10,7 +15,10 @@ export const style = StyleSheet.create({
         justifyContent: 'space-around',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
-        
+        borderEndColor: 'white',
+        borderStartColor: 'white',
+        borderTopColor: 'white',
+        borderWidth: 2,   
     },
 
     tabItem:{
@@ -27,5 +35,5 @@ export const style = StyleSheet.create({
         fontWeight: 'bold',
         marginTop:-2,
         color:'white'
-    }
+    },
 })

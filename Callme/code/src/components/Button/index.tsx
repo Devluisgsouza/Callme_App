@@ -60,7 +60,7 @@ export function ButtonMenu({...rest}:Props) {
         <TouchableOpacity 
             style={style.ButtonMenu}
             {...rest}
-            activeOpacity={0.6}
+            activeOpacity={0.2}
         >
             {rest.Loading?<ActivityIndicator />:<Text style={style.TextButton}>{rest.text}</Text> }
         </TouchableOpacity>

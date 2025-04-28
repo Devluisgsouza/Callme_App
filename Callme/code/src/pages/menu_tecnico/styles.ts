@@ -13,45 +13,52 @@ export const style = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "white"
+        backgroundColor: "black"
     },
 
     boxMid: {
         height: Dimensions.get('window').height/3,
         width: '100%',
         alignItems: 'center',
-        backgroundColor: "white",
-
+        backgroundColor: "black",
     },
 
     boxFinal: {
         height: Dimensions.get('window').height/3,
         width: '100%',
-        backgroundColor: "white"
+        backgroundColor: "black"
     },
 
     logo: {
-        width: 400,
-        height: 250,
-        marginTop: 50
+        width: 200,
+        height: 200,
+        marginTop: 60,
+        borderColor: 'white',
+        borderWidth: 3,
+        borderRadius: 600,
     },
 
     title: {
         fontWeight: 'bold',
+        textShadowColor: 'white',
+        textShadowRadius: 15,
         fontSize: 40,
         color: 'white',
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
     },
 
     message: {
         fontWeight: 'bold',
+        textShadowColor: 'white',
+        textShadowRadius: 15,
         fontSize: 20,
-        color: "black",
+        color: "white",
         justifyContent: "center",
         textAlign: "center",
-        marginLeft: 5,
+        marginLeft: 0,
         marginTop: 15,
+        paddingHorizontal: 15,
     },
 
     Button: {
@@ -64,31 +71,31 @@ export const style = StyleSheet.create({
     },
 
     blackSquare: {
-        width: 240,
+        width: 260,
         height: 70,
         backgroundColor: 'black',
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 20,
-        borderRadius: 30,
+        borderRadius: 20,
         shadowOffset: {
             width: 0,
             height: 12,
         },
         shadowRadius:40.00,
         elevation:9,
-        shadowColor: 'black'        
+        shadowColor: 'black'       
       },
 
       blackSquareBig: {
-        width: 370,
+        width: 355,
         height: 135,
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         alignItems: 'center',
         marginTop: 20,
-        borderRadius: 30,
-        borderWidth: 3,
-        borderColor: 'black',
+        borderRadius: 79,
+        borderWidth: 1.5,
+        borderColor: 'white',
         shadowOffset: {
             width: 0,
             height: 12,

@@ -5,18 +5,19 @@ export const style = StyleSheet.create({
 
     container: {
         marginTop: 10,
-        backgroundColor: 'lightgray',
+        backgroundColor: 'white',
         width: 300,
         borderRadius: 30,
         borderColor: 'gray',
-        borderWidth: 1,
+        borderWidth: 3,
         alignItems: 'center',
         justifyContent: 'center'
       },
     
       picker: {
-        height: 50,
-        width: 300,        
+        height: 'auto',
+        width: 300,
+
       },
 
 

@@ -6,7 +6,6 @@ export const style = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        
     },
 
     boxTop: {
@@ -22,7 +21,6 @@ export const style = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         backgroundColor: "black",
-
     },
 
     boxFinal: {
@@ -42,14 +40,18 @@ export const style = StyleSheet.create({
 
     title: {
         fontWeight: 'bold',
+        textShadowColor: 'white',
+        textShadowRadius: 15,
         fontSize: 40,
         color: 'white',
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
     },
 
     message: {
         fontWeight: 'bold',
+        textShadowColor: 'white',
+        textShadowRadius: 15,
         fontSize: 20,
         color: "white",
         justifyContent: "center",

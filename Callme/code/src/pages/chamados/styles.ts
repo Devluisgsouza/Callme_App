@@ -1,7 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 
 
-
 export const style = StyleSheet.create({
     container: {
         flex: 1,
@@ -99,5 +98,46 @@ export const style = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'white',
         marginTop: 10,
+    },
+
+    BoxWait: {
+        width: 200,
+        height: 90,
+        backgroundColor: 'black',
+        marginTop: 25,
+        marginStart: 20,
+        borderRadius: 20,
+        borderWidth: 2,
+        borderColor: 'blue',
+      },
+
+      BoxNow: {
+        width: 200,
+        height: 90,
+        backgroundColor: 'black',
+        marginTop: 25,
+        marginStart: 20,
+        borderRadius: 20,
+        borderWidth: 2,
+        borderColor: 'yellow',
+      },
+
+      BoxFinally: {
+        width: 200,
+        height: 90,
+        backgroundColor: 'black',
+        marginTop: 25,
+        marginStart: 20,
+        borderRadius: 20,
+        borderWidth: 2,
+        borderColor: 'green',
+      },
+
+      message: {
+        fontWeight: 'bold',
+        fontSize: 13,
+        color: "white",
+        marginTop: 15,
+        paddingHorizontal: 15,
     },
 })

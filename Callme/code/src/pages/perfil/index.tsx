@@ -14,6 +14,8 @@ export default function Perfil(){
     const [userType, setUserType] = useState<string | null>(null);
     const [userType2, setUserType2] = useState<string | null>(null);
 
+    
+
     useEffect(() => {
         const type = getSelectedUserType();
         setUserType(type);

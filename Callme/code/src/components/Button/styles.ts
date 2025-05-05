@@ -2,7 +2,6 @@ import {  StyleSheet } from "react-native";
 
 
 
-
 export const style = StyleSheet.create({
     Button: {
         width: 250,
@@ -13,13 +12,6 @@ export const style = StyleSheet.create({
         borderRadius: 40,
         borderColor: 'white',
         borderWidth: 2,
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 3,
-        },
-        shadowOpacity: 0.29,
-        shadowRadius: 4.65,
     },
 
     TextButton: {
@@ -134,5 +126,37 @@ export const style = StyleSheet.create({
     Icon3: {
         fontSize: 30,
         color: 'white',
+    },
+
+    ButtonAtend: {
+        width: 120,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'black',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: 'white',
+        marginTop: 22,
+        marginLeft: 90,
+        
+    },
+
+    TextButton3: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: 'white',
+    },
+
+    ButtonHistoric: {
+        width: 40,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'black',
+        borderRadius: 40,
+        borderWidth: 2,
+        borderColor: 'white',
+        marginTop: 5,
     },
 })

@@ -51,7 +51,7 @@ export const style = StyleSheet.create({
     message: {
         fontWeight: 'bold',
         textShadowColor: 'white',
-        textShadowRadius: 15,
+        textShadowRadius: 4,
         fontSize: 20,
         color: "white",
         justifyContent: "center",
@@ -96,12 +96,5 @@ export const style = StyleSheet.create({
         borderRadius: 79,
         borderWidth: 1.5,
         borderColor: 'white',
-        shadowOffset: {
-            width: 0,
-            height: 12,
-        },
-        shadowRadius:40.00,
-        elevation:9,
-        shadowColor: 'black'
       },
 })

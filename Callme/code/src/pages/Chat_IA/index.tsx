@@ -54,9 +54,9 @@ export default function Chat_IA() {
         </Text>
 
         {messages.map((msg, index) => (
-            <ScrollView>
+            <ScrollView key={index}>
                 <View style={{flexDirection: 'row', alignSelf: 'flex-end'}}>
-                    <View key={index} style={style.ChatBox}>
+                    <View style={style.ChatBox}>
                         <Text style={{ 
                             color: 'black',
                             fontSize: 15, 
@@ -76,7 +76,7 @@ export default function Chat_IA() {
                         style={style.logo}
                         resizeMode="contain"     
                         />
-                    <View key={index} style={style.IABox}>
+                    <View style={style.IABox}>
                         <Text style={{ 
                             color: 'black',
                             fontSize: 15, 

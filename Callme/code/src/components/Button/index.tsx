@@ -121,4 +121,29 @@ export function ButtonBack({...rest}:Props) {
     )
 }
 
+export function ButtonAtend({...rest}:Props) {
+
+    return(
+        <TouchableOpacity 
+            style={style.ButtonAtend}
+            {...rest}
+            activeOpacity={0.2}
+        >
+            {<Text style={style.TextButton3}>{rest.text}</Text> }
+        </TouchableOpacity>
+    )
+}
+
+export function ButtonHistoric({...rest}:Props) {
+
+    return(
+        <TouchableOpacity 
+            style={style.ButtonHistoric}
+            {...rest}
+            activeOpacity={0.2}
+        >
+            {<MaterialIcons style={style.Icon}>{rest.iconName}</MaterialIcons> }
+        </TouchableOpacity>
+    )
+}
 

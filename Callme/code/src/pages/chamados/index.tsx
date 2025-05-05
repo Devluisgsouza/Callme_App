@@ -39,18 +39,112 @@ export default function Visualizar_chamados(){
             </View>
 
             <View style={style.boxMid}>
-                <ScrollView style={style.box1}>
-                    <Text style={style.TextMid}>FINALIZADOS</Text>
-                </ScrollView>
-                <ScrollView style={style.box2}>
-                    <Text style={style.TextMid}>EM ANDAMENTO</Text>
-                </ScrollView>
-                <ScrollView style={style.box3}>
+                <ScrollView 
+                style={style.box1}
+                contentContainerStyle={{ paddingBottom: 35 }}>
                     <Text style={style.TextMid}>EM ESPERA</Text>
+                    <View style={style.BoxWait}>
+                        <Text style={style.message}>
+                            CHAMADO #08
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: AGUARDANDO
+                        </Text>
+                    </View>
+                    <View style={style.BoxWait}>
+                        <Text style={style.message}>
+                            CHAMADO #09
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: AGUARDANDO
+                        </Text>
+                    </View>
+                    <View style={style.BoxWait}>
+                        <Text style={style.message}>
+                            CHAMADO #10
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: AGUARDANDO
+                        </Text>
+                    </View>
+                    <View style={style.BoxWait}>
+                        <Text style={style.message}>
+                            CHAMADO #11
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: AGUARDANDO
+                        </Text>
+                    </View>
+                </ScrollView>
+                <ScrollView 
+                style={style.box2}
+                contentContainerStyle={{ paddingBottom: 35 }}>
+                    <Text style={style.TextMid}>EM ANDAMENTO</Text>
+                    <View style={style.BoxNow}>
+                        <Text style={style.message}>
+                            CHAMADO #05
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: INICIALIZADO
+                        </Text>
+                    </View>
+                    <View style={style.BoxNow}>
+                        <Text style={style.message}>
+                            CHAMADO #06
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: INICIALIZADO
+                        </Text>
+                    </View>
+                    <View style={style.BoxNow}>
+                        <Text style={style.message}>
+                            CHAMADO #07
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: INICIALIZADO
+                        </Text>
+                    </View>
+                </ScrollView>
+                <ScrollView 
+                style={style.box3}
+                contentContainerStyle={{ paddingBottom: 35 }}>
+                    <Text style={style.TextMid}>FINALIZADOS</Text>
+                    <View style={style.BoxFinally}>
+                        <Text style={style.message}>
+                            CHAMADO #01
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: FINALIZADO
+                        </Text>
+                    </View>
+                    <View style={style.BoxFinally}>
+                        <Text style={style.message}>
+                            CHAMADO #02
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: FINALIZADO
+                        </Text>
+                    </View>
+                    <View style={style.BoxFinally}>
+                        <Text style={style.message}>
+                            CHAMADO #03
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: FINALIZADO
+                        </Text>
+                    </View>
+                    <View style={style.BoxFinally}>
+                        <Text style={style.message}>
+                            CHAMADO #04
+                        </Text>
+                        <Text style={style.message}>
+                            STATUS: FINALIZADO
+                        </Text>
+                    </View>
                 </ScrollView>
             </View>
 
       </View>
-     
+
     )
 }

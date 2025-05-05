@@ -11,8 +11,10 @@ export const style = StyleSheet.create({
     boxTop: {
         height: Dimensions.get('window').height/9,
         width: '100%',
-        backgroundColor: "black",
         alignItems: 'center',
+        backgroundColor: "black",
+        justifyContent: 'space-evenly',
+        flexDirection: 'row',
     },
 
     boxChat: {
@@ -37,7 +39,8 @@ export const style = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: 'white',
-        marginTop: 30,
+        marginTop: 10,
+        marginStart: 90
     },
 
     logo: {

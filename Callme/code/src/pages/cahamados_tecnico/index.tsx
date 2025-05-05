@@ -12,6 +12,9 @@ export default function Visualizar_chamados(){
 
     const navigation = useNavigation<NavigationProp<any>>();
 
+    async function download() {
+        
+    }
 
     return(
         <View style={style.container}>
@@ -20,7 +23,7 @@ export default function Visualizar_chamados(){
                 <ButtonHistoric
                 icon={MaterialIcons} 
                 iconName="download" 
-                // onPress={() => getChat()}
+                onPress={() => download()}
                 />    
             </View>
             <View style={style.boxMid}>

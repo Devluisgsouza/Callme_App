@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, ScrollView } from 'react-native';
 import { style } from './styles';
-import { ButtonChat } from '../../components/Button';
+import { ButtonChat, ButtonHistoric } from '../../components/Button';
 import {MaterialIcons} from '@expo/vector-icons';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 
@@ -14,8 +14,8 @@ export default function Visualizar_chamados(){
 
 
 
-    async function getBack(){
-        navigation.reset({ routes: [{ name: "BottomRoutes" }] });
+    async function download(){
+        
     }
 
     async function getChat(){
@@ -26,7 +26,12 @@ export default function Visualizar_chamados(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text style={style.Textinicial}>CHAMADOS</Text>  
+                <Text style={style.Textinicial}>CHAMADOS</Text>
+                <ButtonHistoric
+                icon={MaterialIcons} 
+                iconName="download" 
+                onPress={() => download()}
+                />  
             </View>
             <View style={style.boxChat}>
                 <View style={{ flexDirection: 'row'}}>

@@ -36,22 +36,27 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 
 - Instale o [Node.js](https://nodejs.org/pt)
 
-```bash
+```cmd
     # Clone o projeto
     $ git clone https://github.com/Devluisgsouza/Callme_App.git 
 ```
 
-```bash
-    # Entre na pasta do código
+```cmd
+    # Instale o Expo-cli
+    $ npm install -g expo-cli
+```
+
+```cmd
+    # Entre na pasta code
     $ cd Callme/code
 ```
 
-```bash
+```cmd
     # Instale a dependência
     $ npm install
 ```
 
-```bash
+```cmd
     # Conectar o código ao emulador android
     $ npm run android
 ```

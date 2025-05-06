@@ -4,7 +4,7 @@ import { style } from './styles';
 import SelectMultiple from "../../components/SelectBox";
 import { InputBig } from "../../components/inputBig";
 import MeuDropdown from "../../components/ListBox";
-import { Button, ButtonChat, ButtonQuest } from "../../components/Button";
+import { Button, ButtonQuest } from "../../components/Button";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 

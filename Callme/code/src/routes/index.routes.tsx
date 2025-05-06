@@ -3,7 +3,7 @@ import React from "react";
 import Login from "../pages/login";
 import Criar_Login from "../pages/criar_login";
 import BottomRoutes from "./botton.routes";
-import Criar_chamado from "../pages/Criar_chamado";
+import Criar_chamado from "../pages/criar_chamado";
 import Perfil from "../pages/perfil";
 import Visualizar_chamados from "../pages/chamados";
 import BottomTecnicoRoutes from "./botton.tecnico.routes";
@@ -37,7 +37,7 @@ export default function Routes(){
                 component={Login}
             />
             <Stack.Screen
-                name="Criar_chamado"
+                name="criar_chamado"
                 component={Criar_chamado}
             />
             <Stack.Screen

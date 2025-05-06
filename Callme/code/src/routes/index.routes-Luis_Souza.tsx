@@ -37,7 +37,7 @@ export default function Routes(){
                 component={Login}
             />
             <Stack.Screen
-                name="Criar_chamado"
+                name="criar_chamado"
                 component={Criar_chamado}
             />
             <Stack.Screen

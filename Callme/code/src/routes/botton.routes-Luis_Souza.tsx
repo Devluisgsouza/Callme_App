@@ -22,7 +22,7 @@ export default function BottomRoutes(){
                 component={Menu}
                 />
             <tab.Screen 
-                name="Criar_chamado"
+                name="criar_chamado"
                 component={Criar_chamado}
                 />
             <tab.Screen 

@@ -15,7 +15,7 @@ export default function Visualizar_chamados(){
 
 
     async function download(){
-        
+        navigation.navigate("download_chamados")
     }
 
     async function getChat(){

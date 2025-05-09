@@ -11,6 +11,8 @@ import Visualizar_chamados_tecnico from "../pages/cahamados_tecnico";
 import Atender_chamados from "../pages/atender_chamado";
 import Chat_IA from "../pages/Chat_IA";
 import Inicial from "../pages/Initial";
+import Download_chamados from "../pages/download_chamados";
+
 
 
 
@@ -71,7 +73,11 @@ export default function Routes(){
             <Stack.Screen
                 name="Chat_IA"
                 component={Chat_IA}
-            />                   
+            />      
+            <Stack.Screen
+                name="download_chamados"
+                component={Download_chamados}
+            />              
         </Stack.Navigator>
     )
 }

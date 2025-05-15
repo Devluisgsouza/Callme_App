@@ -4,7 +4,7 @@
 </h1>
 
 
-## 📕 Sobre
+## 📕 Sobre 
 
 **Callme App** é um software mobile utilizado para gerenciar chamados realizados por funcionários para a assistência técnica integrado a IA, os funcionários criam chamados através do app, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.
 

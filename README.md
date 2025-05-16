@@ -4,7 +4,7 @@
 </h1>
 
 
-## 📕 Sobre
+## 📕 Sobre 
 
 **Callme App** é um software mobile utilizado para gerenciar chamados realizados por funcionários para a assistência técnica integrado a IA, os funcionários criam chamados através do app, primeiramente a IA recebe o chamado e apresenta uma solução prévia ao funcionário, caso não resolva, encaminha o chamado ao técnico responsável na área.
 
@@ -28,6 +28,13 @@ Essa idéia veio devido ao aumento de insatisfação com os softwares já existe
 - [Diagramas](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Diagrama_de_caso_de_uso_sistema.asta)
 - [Sprints Backlog](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Sprints_Backlog.docx)
 - [Descrição Caso de Uso](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/Modelagem_de_Requisitos/Descrição_caso_de_uso.docx)
+
+
+
+## 📃 Documentação do Projeto
+
+- [Documentação](https://github.com/Devluisgsouza/Callme_App/blob/main/Callme/PIM/PIM%203%20SEMESTRE.doc)
+
 
 
 ## 🆙 Como Contribuir

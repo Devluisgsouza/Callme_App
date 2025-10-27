@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, Image } from 'react-native';
 import { style } from './styles';
-import Logo from '../../assets/logoCallmeapp.png';
+import Logo from '../../assets/logo.png';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { ButtonMenu } from "../../components/Button";
 

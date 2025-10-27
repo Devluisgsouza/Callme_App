@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Text,View,Image,Alert } from "react-native";
 import { style } from "./styles";
-import Logo from '../../assets/logoCallmeapp.png';
+import Logo from '../../assets/logo.png';
 import {MaterialIcons, Octicons} from '@expo/vector-icons';
 import { Input } from "../../components/input";
 import { Button, ButtonText, ButtonTextsenha } from "../../components/Button";

@@ -35,17 +35,13 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 170,
-        height: 170,
+        width: 250,
+        height: 250,
         marginTop: 100,
-        borderColor: 'white',
-        borderWidth: 2,
-        borderRadius: 100,
     },
 
     text: {
         fontWeight: 'bold',
-        marginTop: 10,
         fontSize: 30,
         color: 'white'
     },

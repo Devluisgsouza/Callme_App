@@ -30,12 +30,9 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 200,
-        height: 200,
+        width: 250,
+        height: 250,
         marginTop: 60,
-        borderColor: 'white',
-        borderWidth: 3,
-        borderRadius: 600,
     },
 
     title: {

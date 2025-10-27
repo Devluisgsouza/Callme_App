@@ -55,10 +55,9 @@ export default function Menu_Tecnico(){
             <View style={style.boxFinal}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <ButtonMenu text="VISUALIZAR CHAMADOS" onPress={() => chamados()} />
-                    <ButtonMenu text="ATENDER CHAMADOS" onPress={() => atender_chamado()} />
-                </View>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <ButtonMenu text="PERFIL" onPress={() => perfil()} />
+                </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                     <ButtonMenu text="SAIR" onPress={() => sair()} />
                 </View>
             </View>

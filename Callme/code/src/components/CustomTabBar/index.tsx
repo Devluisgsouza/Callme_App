@@ -26,16 +26,6 @@ export default ({ state, navigation }: BottomTabBarProps) => {
                 </TouchableOpacity>
 
 
-                <TouchableOpacity style={style.tabItem} onPress={()=>go('Criar_chamado')}>
-                    <MaterialIcons
-                        name="add-box"
-                        style={{opacity:state.index === 1?1:0.3,fontSize:32,color:'white'}}
-                    />
-                    <Text style={style.textTab}>
-                        Criar</Text>
-                </TouchableOpacity>
-
-
                 <TouchableOpacity style={style.tabItem} onPress={()=>go('chamados')}>
                     <MaterialIcons
                         name="storage"

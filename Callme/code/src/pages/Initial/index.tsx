@@ -43,9 +43,6 @@ export default function Inicial() {
                 <View style={{marginTop: 80}}>
                     <Button text="ENTRAR" onPress={() => getEntrar()} />
                 </View>
-                <View style={{marginTop: -20}}>
-                    <ButtonText text="CRIAR CONTA" onPress={() => getcriar()} />            
-                </View>
             </View> 
         </View>
     )

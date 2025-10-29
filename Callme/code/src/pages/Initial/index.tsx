@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Text,View,Image } from "react-native";
 import { style } from "./styles";
-import Logo from '../../assets/logoCallmeapp.png';
+import Logo from '../../assets/logowindow.png';
 import { Button, ButtonText } from "../../components/Button";
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 

@@ -30,12 +30,9 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 200,
-        height: 200,
+        width: 300,
+        height: 300,
         marginTop: 60,
-        borderColor: 'white',
-        borderWidth: 3,
-        borderRadius: 600,
     },
 
     title: {
@@ -87,19 +84,12 @@ export const style = StyleSheet.create({
 
       blackSquareBig: {
         width: 355,
-        height: 135,
+        height: 80,
         backgroundColor: 'black',
         alignItems: 'center',
-        marginTop: 20,
+        marginTop: 30,
         borderRadius: 79,
-        borderWidth: 1.5,
+        borderWidth: 2,
         borderColor: 'white',
-        shadowOffset: {
-            width: 0,
-            height: 12,
-        },
-        shadowRadius:40.00,
-        elevation:9,
-        shadowColor: 'black'
       },
 })

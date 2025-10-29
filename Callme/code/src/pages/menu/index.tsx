@@ -46,7 +46,7 @@ export default function Menu(){
                 </View>
 
                 <View style={style.blackSquareBig}>
-                    <Text style={style.message}>A CALLME é integrada à Inteligência Artificial para fornecer a melhor solução para os seus problemas técnicos!</Text>
+                    <Text style={style.message}>Para criar um chamado utilize a versão web no seu computador!</Text>
                 </View>
 
             </View>

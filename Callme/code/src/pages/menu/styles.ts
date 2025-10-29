@@ -30,8 +30,8 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 250,
-        height: 250,
+        width: 300,
+        height: 300,
         marginTop: 60,
     },
 
@@ -86,12 +86,12 @@ export const style = StyleSheet.create({
 
       blackSquareBig: {
         width: 355,
-        height: 135,
+        height: 80,
         backgroundColor: 'black',
         alignItems: 'center',
-        marginTop: 20,
+        marginTop: 40,
         borderRadius: 79,
-        borderWidth: 1.5,
+        borderWidth: 2,
         borderColor: 'white',
       },
 })

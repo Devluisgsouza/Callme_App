@@ -29,7 +29,6 @@ export const style = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         marginTop: 10,
-        marginStart: 90
     },
 
     logo: {

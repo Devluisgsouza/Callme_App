@@ -24,12 +24,11 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 250,
-        height: 250,
+        width: 300,
+        height: 300,
+        backgroundColor: 'white',
         marginTop: -20,
-        borderColor: 'white',
-        borderWidth: 2,
-        borderRadius: 300,
+        borderRadius: 400,
     },
 
     SubTitle: {

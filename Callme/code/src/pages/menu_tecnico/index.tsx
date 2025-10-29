@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, Image } from 'react-native';
 import { style } from './styles';
-import Logo from '../../assets/logoCallmeapp.png';
+import Logo from '../../assets/logo.png';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { ButtonMenu } from "../../components/Button";
 
@@ -47,7 +47,7 @@ export default function Menu_Tecnico(){
                 </View>
 
                 <View style={style.blackSquareBig}>
-                    <Text style={style.message}>A CALLME é integrada à Inteligência Artificial para fornecer o melhor suporte para os seus atendimentos técnicos!</Text>
+                    <Text style={style.message}>Para atender um chamado, utilize a versão web no seu PC!</Text>
                 </View>
 
             </View>

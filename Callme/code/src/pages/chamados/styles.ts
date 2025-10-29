@@ -33,6 +33,7 @@ export const style = StyleSheet.create({
         width: '100%',
         backgroundColor: "black",
         marginTop: 10,
+        gap: 5,
     },
 
     Textinicial: {
@@ -40,14 +41,12 @@ export const style = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         marginTop: 10,
-        marginStart: 90
     },
 
     logo: {
         width: 70,
         height: 170,
         marginTop: -30
-
     },
 
     TextChat: {
@@ -57,8 +56,7 @@ export const style = StyleSheet.create({
         fontSize: 22,
         color: 'white',
         marginStart: 20,
-        marginTop: 15,
-        
+        marginTop: 15,    
     },
 
     TextMid: {
@@ -112,7 +110,7 @@ export const style = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 2,
         borderColor: 'blue',
-      },
+    },
 
       BoxNow: {
         width: 200,
@@ -123,7 +121,7 @@ export const style = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 2,
         borderColor: 'yellow',
-      },
+    },
 
       BoxFinally: {
         width: 200,
@@ -134,7 +132,7 @@ export const style = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 2,
         borderColor: 'green',
-      },
+    },
 
       message: {
         fontWeight: 'bold',

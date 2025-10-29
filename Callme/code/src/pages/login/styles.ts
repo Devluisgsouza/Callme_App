@@ -35,15 +35,16 @@ export const style = StyleSheet.create({
     },
 
     logo: {
-        width: 250,
-        height: 250,
+        width: 300,
+        height: 300,
         marginTop: 100,
     },
 
     text: {
         fontWeight: 'bold',
         fontSize: 30,
-        color: 'white'
+        color: 'white',
+        marginTop: -50,
     },
 
     Button: {

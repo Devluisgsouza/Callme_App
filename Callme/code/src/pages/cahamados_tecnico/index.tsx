@@ -19,12 +19,7 @@ export default function Visualizar_chamados(){
     return(
         <View style={style.container}>
             <View style={style.boxTop}>
-                <Text style={style.Textinicial}>CHAMADOS</Text>
-                <ButtonHistoric
-                icon={MaterialIcons} 
-                iconName="download" 
-                onPress={() => download()}
-                />    
+                <Text style={style.Textinicial}>CHAMADOS</Text>   
             </View>
             <View style={style.boxMid}>
                 <ScrollView 
